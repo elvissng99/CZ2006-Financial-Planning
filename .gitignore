@@ -3,6 +3,7 @@
 SimpliPlan/Car/__pycache__/__init__.cpython-39.pyc
 *.pyc
 *.pyc
+SimpliPlan/Finance/migrations/__init__.py
 SimpliPlan/Finance/__pycache__
 SimpliPlan/Car/migrations/0001_initial.py
 SimpliPlan/Car/migrations/__init__.py
