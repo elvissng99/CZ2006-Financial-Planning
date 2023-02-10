@@ -1,0 +1,128 @@
+{% load static %}
+<!-- {% static "nav/assets/" %} -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <!-- Favicons -->
+  <link href="{% static 'nav/assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'nav/assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'nav/assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'nav/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'nav/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'nav/assets/vendor/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+  <link href="{% static 'nav/assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'nav/assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'nav/assets/css/style.css' %}" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <a href="{% url 'home' %}"><img src="{% static 'nav/assets/img/logo.png' %}" alt="logo" class="img-fluid"></a>
+      </div>
+
+      <nav id="navbar" class="navbar">
+        {% if username %}
+          {% if firstTime %}
+            <ul>
+              <li><a class="nav-link scrollto" href="{% url 'home' %}">Home</a></li>
+              <li class="dropdown"><a href="{% url 'financeHome' %}"><span>Finance</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="{% url 'questionaire' %}">Questionaire</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="{% url 'form' %}"><span>Housing</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="{% url 'costBreakdown' %}">Housing Report</a></li>
+                </ul>
+              </li>
+              <li><a class="nav-link scrollto" href="{% url 'car_search' %}">Car</a></li>
+              <li class="dropdown"><a href="#"><span>{{username}}</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="{% url 'account' %}">Account</a></li>
+                  <li><a href="{% url 'logout' %}">Logout</a></li>
+                </ul>
+              </li> 
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          {% else %}
+            <ul>
+              <li><a class="nav-link scrollto" href="{% url 'home' %}">Home</a></li>
+              <li class="dropdown"><a href="{% url 'financeHome' %}"><span>Finance</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="{% url 'updateUserInfo' %}">Update User Info</a></li>
+                  <li><a href="{% url 'balanceSheet_Result' %}">Balance Sheet</a></li>
+                  <li><a href="{% url 'cashFlow_Result' %}">Financial Statement</a></li>
+                  <li><a href="{% url 'growWealth' %}">Grow your wealth</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a  href="{% url 'form' %}"><span>Housing</span>   <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="{% url 'costBreakdown' %}">Housing Report</a></li>
+                </ul>
+              </li>
+              <li><a class="nav-link scrollto" href="{% url 'car_search' %}">Car</a></li>
+              <li class="dropdown"><a href="#"><span>{{username}}</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="{% url 'account' %}">Account</a></li>
+                  <li><a href="{% url 'logout' %}">Logout</a></li>
+                </ul>
+              </li>
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          {% endif %}
+        {% else %}
+          <ul>
+            <li><a class="nav-link scrollto active" href="{% url 'home' %}">Home</a></li>
+            <li><a class="nav-link scrollto" href="{% url 'login' %}">Login</a></li>
+            <li><a class="nav-link scrollto" href="{% url 'register' %}">Register</a></li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle"></i>
+        {% endif %}
+      </nav><!-- navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Main ======= -->
+  <main id="main">
+
+  {% block content %}
+  {% endblock %}
+
+  </main><!-- End #main -->
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'nav/assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'nav/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'nav/assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'nav/assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'nav/assets/vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'nav/assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'nav/assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

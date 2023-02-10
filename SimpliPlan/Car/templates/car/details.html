@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+  <!-- ======= Car Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper-container">
+              <div class="align-items-center">
+                <img src="{{ car.image.url }}" alt="{{ car.model }}">
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>{{ car.model }} {{ car.spec }}</h3>
+              <ul>
+                <li><strong>Current Price</strong>: {{ car.currentPrice }}</li>
+                <li><strong>Depreciation</strong>: {{ car.depreciation }}/month</li>
+                <li><strong>Downpayment</strong>: {{ car.downPayment }}</li>
+                <li><strong>Monthly Installment</strong>: {{ car.installment }}</li>
+                <li><strong>COE</strong>: {{ car.COE }}</li>
+                <li><strong>Road Tax</strong>: {{ car.roadTax }}/month</li>
+                <li><strong>Open Market Value (OMV)</strong>: {{ car.OMV }}</li>
+                <li><strong>Additional Registration Fee (ARF)</strong>: {{ car.ARF }}</li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h4><strong>Total Mileage Calculator</strong></h4>
+
+              <form method="POST">
+                {% csrf_token %}
+                <div class="form-outline form-white mb-2">
+                  <input type="text" name="source" id="source" class="form-control form-control-lg mb-6" placeholder="Source" required/>
+                </div>
+                <div class="form-outline form-white mb-2">
+                  <input type="text" name="destination" id="destination" class="form-control form-control-lg" placeholder="Destination" required/>
+                </div>
+                <div class="form-outline form-white mb-2">
+                  <input type="text" name="frequency" id="frequency" class="form-control form-control-lg" placeholder="Frequency" name="frequency" required/>
+                </div>
+                <button class="btn btn-outline-dark btn-lg px-5 float-end" type="submit" name="Add trip">Add Trip</button>
+              </form>
+
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <table class="table table-bordered table-dark table align-middle">
+          <thead>
+            <tr>
+              <th scope="col">Source</th>
+              <th scope="col">Destination</th>
+              <th scope="col">Distance</th>
+              <th scope="col">Frequency</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for trip in trips %}
+            <tr>
+              <td>{{ trip.source }}</td>
+              <td>{{ trip.destination }}</td>
+              <td>{{ trip.distance }}</td>
+              <td>{{ trip.frequency }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+
+      <div class="container">
+          <h2 class="float-start col-md-7">Total Mileage: {{ totalMileage }} KM</h2>
+          <a href="{% url 'trip_delete' car.id %}"><button class="btn btn-outline-dark btn-lg p-3 m-2 float-end" type="submit">Delete Trip</button><a/>
+          <!-- <a href="/finance/cashFlow/"><button class="btn btn-outline-dark btn-lg px-5 float-end" type="submit">Add Total Mileage</button><a/> -->
+          <form method="POST">
+            {% csrf_token %}
+            <a href="/finance/cashFlow/"><button type="submit" name="Update Balance Sheet" class="btn btn-outline-dark bt-lg p-3 m-2 float-end">Update Balance Sheet</button><a/>
+          </form>
+          <h2 class="float-start col-md-7">Monthly Cost: ${{ totalCost }}</h2>
+      </div>
+    </section><!-- End Car Details Section -->
+
+{% endblock %}

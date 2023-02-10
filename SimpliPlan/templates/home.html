@@ -1,0 +1,95 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+  <!-- ======= Homepage Section ======= -->
+  <section id="team" class="team">
+    {% if username %}
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="zoom-in">
+              <div class="member-img">
+                <a href="{% url 'financeHome' %}"><img src="{% static "nav/assets/img/team/Finance.jpg" %}" class="img-fluid" alt=""></a>
+              </div>
+              <div class="member-info">
+                <h4>Financial Planning</h4>
+                <p>Path to financial freedom</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <div class="member-img">
+                <a href="{% url 'car_search' %}"><img src="{% static "nav/assets/img/team/Car.jpg" %}" class="img-fluid" alt=""></a>
+              </div>
+              <div class="member-info">
+                <h4>Car</h4>
+                <p>Know your costs</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <div class="member-img">
+                <a href="{% url 'form' %}"><img src="{% static "nav/assets/img/team/Housing.jpg" %}" class="img-fluid" alt=""></a>
+              </div>
+              <div class="member-info">
+                <h4>Housing</h4>
+                <p>Expert Guidance</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    {% else %}
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="zoom-in">
+              <div class="member-img">
+                <a><img src="{% static "nav/assets/img/team/Finance.jpg" %}" class="img-fluid" alt=""></a>
+              </div>
+              <div class="member-info">
+                <h4>Financial Planning</h4>
+                <p>Path to financial freedom</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <div class="member-img">
+                <a><img src="{% static "nav/assets/img/team/Car.jpg" %}" class="img-fluid" alt=""></a>
+              </div>
+              <div class="member-info">
+                <h4>Car</h4>
+                <p>Know your costs</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <div class="member-img">
+                <a><img src="{% static "nav/assets/img/team/Housing.jpg" %}" class="img-fluid" alt=""></a>
+              </div>
+              <div class="member-info">
+                <h4>Housing</h4>
+                <p>Expert Guidance</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    {% endif %}
+  </section><!-- Homepage Section -->
+    
+{% endblock %}

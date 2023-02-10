@@ -1,0 +1,86 @@
+.hori-timeline .events {
+  display: flex;
+  border-top: 3px solid #e9ecef;
+  margin: 30px;
+  max-width: 100%;
+  overflow-x: scroll;
+}
+
+.hori-timeline .events .event-list {
+  display: inline;
+  position: relative;
+  text-align: center;
+  padding-top: 70px;
+  margin-right: 0;
+  min-width: 300px;
+}
+
+.hori-timeline .events .event-list:before {
+  content: "";
+  position: absolute;
+  height: 36px;
+  border-right: 2px dashed #dee2e6;
+  top: 0;
+}
+.hori-timeline .events .event-list .event-date {
+  left: 0;
+  right: 0;
+  width: 75px;
+  margin: 10px auto;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+@media (min-width: 1140px) {
+  .hori-timeline .events .event-list {
+    display: inline-block;
+    width: 24%;
+    padding-top: 45px;
+  }
+  .hori-timeline .events .event-list .event-date {
+    top: -12px;
+  }
+}
+.bg-soft-primary {
+  background-color: rgba(64, 144, 203, 0.3) !important;
+}
+.bg-soft-success {
+  background-color: rgba(71, 189, 154, 0.3) !important;
+}
+.bg-soft-danger {
+  background-color: rgba(231, 76, 94, 0.3) !important;
+}
+.bg-soft-warning {
+  background-color: rgba(249, 213, 112, 0.3) !important;
+}
+.card {
+  align-items: center;
+  border: none;
+  margin-bottom: 24px;
+  -webkit-box-shadow: 0 0 13px 0 rgba(236, 236, 241, 0.44);
+  box-shadow: 0 0 13px 0 rgba(236, 236, 241, 0.44);
+  background-color: #fff;
+}
+
+.card .container {
+  margin-left: calc(var(--bs-gutter-x) / -2);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}

@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance Sheet</title>
+</head>
+<body>
+    <div class="p-5 text-center bg-light" >
+        <h1 class="mb-3" >Your Balance Sheet</h1>
+    </div>
+
+    <div class="row">
+        <!--Asset-->
+        <div class="table-responsive col-md-6">
+            <center><h2 class="sub-header" style="background-color:rgb(145, 224, 224);" >Current Assets</h2></center>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th class="text-center">
+                                Asset Name
+                            </th>
+                            <th class="text-center">
+                                Total Amount ($)
+                            </th>
+                            <th class="text-center">
+                                Returns
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for asset in asset_list %}
+                        <tr>
+                            <td>{{asset.assetName}}</td>
+                            <td>{{asset.amount}}</td>
+                            <td>{{asset.returns}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!--Debt-->
+        <div class="table-responsive col-md-6">
+            <center><h2 class="sub-header" style="background-color:rgb(145, 224, 224);">Current Liabilities</h2></center>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th class="text-center">
+                                Liability Name
+                            </th>
+                            <th class="text-center">
+                                Total Amount ($)
+                            </th>
+                            <th class="text-center">
+                                Total Repayment ($)
+                            </th>
+                            <th class="text-center">
+                                Annual Interest
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for debt in debt_list %}
+                        <tr>
+                            <td>{{debt.debtName}}</td>
+                            <td>{{debt.amount}}</td>
+                            <td>{{debt.repayment}}</td>
+                            <td>{{debt.interest}}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class = "row">
+        <div class =  "col-md-6">
+            <h5><center>Your current Total Asset is : $ {{ totalAsset }}</center></h5>
+            <h5><center>Your current Total Debt is : $ {{ totalDebt }}</center></h5>
+            <h5><center>Your current Net Worth is : $ {{ networth }}</center></h5>
+        </div>
+        <div class = "col-md-6">
+            <center><button onclick="window.location.href='/finance/balanceSheet_Edit/'" type="button" class="btn btn-outline-dark">Update Balance Sheet</button></center>  
+        </div>
+    </div>
+
+</body>
+
+</html>
+{% endblock %}

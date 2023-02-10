@@ -1,0 +1,137 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  <!-- ======= House Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <style>
+        .button {
+          background-color: #04AA6D;
+          color: #ffffff;
+          border: none;
+          padding: 5px 20px;
+          font-size: 17px;
+          font-family: Raleway;
+          cursor: pointer;
+          border-radius: 5%;
+          right:    0;
+          bottom:   0;
+        }
+
+        .button:hover {
+          opacity: 0.8;
+        }
+      </style>
+      <script>
+        function addToDebt(n){
+          if(n == 1){
+            document.getElementById("regForm1").submit();  
+          }else{
+            document.getElementById("regForm2").submit();  
+          }
+        }
+      </script>
+      <div class="container">
+        <div class="row gy-4 justify-content-center">
+          <div class="d-flex flex-row justify-content-center">
+            <div class="portfolio-info d-flex-column gap-5 w-49">
+              <h3>What you can afford</h3>
+              <ul>
+                <li><strong>Max Property Price</strong>: ${{ housingCalculate.maxPropertyPrice }}</li>
+                <li><strong>Downpayment</strong>: ${{ housingCalculate.downPayment }}</li>
+                <li><strong>Lump Sum Payment</strong>: ${{ housingCalculate.lumpSumPayment }}</li>
+                <li><strong>Maximum home loan</strong>: ${{ housingCalculate.maxHomeLoan }}/month</li>
+                <li><strong>Monthly Installment</strong>: ${{ housingCalculate.monthlyInstallment }}/month</li>
+                <li><strong>Loan Period</strong>: 25 Years</li>
+              </ul>
+            </div>
+
+            <div class="column gy-4 justify-content-center">
+              <div class="portfolio-info d-flex gap-5 w-100">
+                <div class="d-flex-column w-20">
+                  <h3>The most affordable option would be a...</h3>
+                  <h4>{{ mostAffordable.type }} in  {{ mostAffordable.location }}</h4>
+                  <h6>Price: ${{ mostAffordable.price }}</h6>
+                </div>
+                <ul>
+                  <li><strong>Maximum home loan</strong>: ${{ mostAffordable.maxLTV }}</li>
+                  <li><strong>Loan Period</strong>: 25 Years</li>
+                  <li><strong>Monthly Installment</strong>: ${{ mostAffordable.monthlyInstallment }}/month</li>
+                </ul>
+                <ul>
+                  <li><strong>Downpayment</strong>: ${{ mostAffordable.downPayment }}</li>
+                  <li><strong>Buyer's Stamp Duties</strong>: ${{ mostAffordable.buyerStampDuties }}</li>
+                  <li><strong>Lump Sum Payment</strong>: ${{ mostAffordable.lumpSumPayment }}</li>
+                  <li><input class = "button" type="button" value="Add/Update Balance Sheet" onclick="addToDebt(1)"></li>
+                </ul>
+                <form id = "regForm1" action="", method="POST"> {% csrf_token %}
+                  <input name = "price" type = "hidden" value = {{ mostAffordable.price }} >
+                  <input name = "repayment" type = "hidden" value = {{ mostAffordable.monthlyInstallment }}>
+                </form>
+                
+              </div>
+
+              <div class="portfolio-info d-flex gap-5 w-100">
+                <div class="d-flex-column w-20">
+                  <h3>The best that you can do would be a...</h3>
+                  <h4>{{ maxAffordable.type }} in  {{ maxAffordable.location }}</h4>
+                  <h6>Price: ${{ maxAffordable.price }}</h6>
+                </div>
+                <ul>
+                  <li><strong>Maximum home loan</strong>: ${{ maxAffordable.maxLTV }}</li>
+                  <li><strong>Loan Period</strong>: 25 Years</li>
+                  <li><strong>Monthly Installment</strong>: ${{ maxAffordable.monthlyInstallment }}/month</li>
+                </ul>
+                <ul>
+                  <li><strong>Downpayment</strong>: ${{ maxAffordable.downPayment }}</li>
+                  <li><strong>Buyer's Stamp Duties</strong>: ${{ maxAffordable.buyerStampDuties }}</li>
+                  <li><strong>Lump Sum Payment</strong>: ${{ maxAffordable.lumpSumPayment }}</li>
+                  <li><input class = "button" type="button" value="Add/Update Balance Sheet" onclick="addToDebt(2)"></li>
+                </ul>
+                <form id = "regForm2" action="", method="POST"> {% csrf_token %}
+                  <input name = "price" type = "hidden" value = {{ maxAffordable.price }} >
+                  <input name = "repayment" type = "hidden" value = {{ maxAffordable.monthlyInstallment }}>
+                </form>
+              </div>
+              
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="card">
+        <div class="container">
+            <h4 class="card-title mb-5">Cashflow Timeline</h4>
+
+            <div class="hori-timeline">
+                <ul class="list-group list-group-horizontal events">
+                    <li class="list-inline-item event-list">
+                        <div class="px-4">
+                            <div class="event-date bg-soft-primary text-primary">2 June</div>
+                            <h5 class="font-size-16">Event One</h5>
+                            <span>It will be as simple as occidental in fact it will be Occidental Cambridge friend</span>
+                        </div>
+                    </li>
+                    <li class="list-inline-item event-list">
+                        <div class="px-4">
+                            <div class="event-date bg-soft-success text-success">5 June</div>
+                            <h5 class="font-size-16">Event Two</h5>
+                            <p class="text-muted">Everyone realizes why a new common language one could refuse translators.</p>
+                        </div>
+                    </li>
+                    <li class="list-inline-item event-list">
+                        <div class="px-4">
+                            <div class="event-date bg-soft-danger text-danger">7 June</div>
+                            <h5 class="font-size-16">Event Three</h5>
+                            <p class="text-muted">If several languages coalesce the grammar of the resulting simple and regular</p>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+      </div> -->
+<link rel="stylesheet" href="{% static 'styles.css' %}">
+{% endblock %}

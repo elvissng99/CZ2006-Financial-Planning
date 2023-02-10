@@ -1,0 +1,163 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<head>
+<!--CSS for Form-->
+    <style>
+        * {
+        box-sizing: border-box;
+        }
+
+        body {
+        background-color: #f1f1f1;
+        }
+
+        #regForm {
+        background-color: #ffffff;
+        margin: 100px auto;
+        font-family: Raleway;
+        padding: 40px;
+        width: 70%;
+        min-width: 300px;
+        }
+
+        h1 {
+        text-align: center;  
+        }
+
+        input {
+        padding: 10px;
+        width: 100%;
+        font-size: 17px;
+        font-family: Raleway;
+        border: 1px solid #aaaaaa;
+        }
+
+        /* Mark input boxes that gets an error on validation: */
+        input.invalid {
+        background-color: #ffdddd;
+        }
+
+        /* Hide all steps by default: */
+        .tab {
+        display: none;
+        }
+
+        button {
+        background-color: #04AA6D;
+        color: #ffffff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 17px;
+        font-family: Raleway;
+        cursor: pointer;
+        }
+
+        button:hover {
+        opacity: 0.8;
+        }
+
+        #prevBtn {
+        background-color: #bbbbbb;
+        }
+
+        /* Make circles that indicate the steps of the form: */
+        .step {
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbbbbb;
+        border: none;  
+        border-radius: 50%;
+        display: inline-block;
+        opacity: 0.5;
+        }
+
+        .step.active {
+        opacity: 1;
+        }
+
+        /* Mark the steps that are finished and valid: */
+        .step.finish {
+        background-color: #04AA6D;
+        }
+    </style>
+    <title>Update Information</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+    <form id="regForm" method = "POST" action='/finance/updateUserInfo/'>
+    {% csrf_token %}
+      <!-- One "tab" for each step in the form: -->
+      <!--first sub page-->
+        <h1>Updating Information</h1>
+        <h2 style = "text-align: center;">Please enter your personal details</h2>
+        Date of Birth:
+          <p><input type = "date" id = "DoB" name="DoB" value = "{{DOB}}"></p>
+
+        Gender:
+        <p>
+          <select id="gender" name="gender">
+            <option value="{{gender}}" selected hidden>{{gender}}</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="NA">I prefer not to Say</option>
+          </select>
+        </p>
+
+        Education Level:
+        <p>
+          <select id="eLevel" name="eLevel">
+            <option value="{{education}}" selected hidden>{{education}}</option>
+            <option value="Primary">Primary</option>
+            <option value="GCE 'N' Levels">GCE 'N' Levels</option>
+            <option value="GCE 'O' Levels">GCE 'O' Levels</option>
+            <option value="GCE 'A' Levels">GCE 'A' Levels</option>
+            <option value="Diploma">Diploma</option>
+            <option value="Bachelor">Bachelor</option>
+            <option value="Master">Master</option>
+            <option value="Doctoral (PhD)">Doctoral (PhD)</option>
+          </select>
+        </p>
+
+        Marital Status:
+        <p>
+          <select id="mStatus" name="mStatus" value = "{{maritalStatus}}">
+            <option value="{{maritalStatus}}" selected hidden>{{maritalStatus}}</option>
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+            <option value="Divorced">Divorced</option>
+            <option value="Widowed">Widowed</option>
+          </select>
+        </p>
+        Occupuation:
+        <p><input value = "{{occupation}}" oninput="this.className = ''" name="Occupation"></p>
+
+        Monthly Income:
+        <p><input type = "number" step = 0.01 value = "{{monthlyIncome}}" oninput="this.className = ''" name="mIncome"></p>
+
+        <h2 style = "text-align: center;">Please enter your family's details</h2>
+        Spouse Income:
+        <p><input  type = "number" step = 0.01 value = "{{spouseMonthlyIncome}}"  oninput="this.className = ''" name="sIncome"></p>
+        
+        Number of Dependents:
+        <p><input type = "number" step = 1 value = "{{noOfDependents}}" oninput="this.className = ''" name="noOfDependent"></p>
+
+        <h2 style = "text-align: center;">Please enter your CPF details</h2>
+
+        Ordinary Account:
+        <p><input type = 'number' step = 0.01 value = "{{OAAmount}}" oninput="this.className = ''" name="OAcpf"></p>
+        Special Account:
+        <p><input type = 'number' step = 0.01 value = "{{SAAmount}}" oninput="this.className = ''" name="SAcpf"></p>
+        Medisave Account:
+        <p><input type = 'number' step = 0.01 value = "{{medisave}}" oninput="this.className = ''" name="MAcpf"></p>
+
+      <button type="submit" class="btn btn-lg btn-danger col-md-12">Save Changes</button>
+    
+    </form>
+</body>
+
+
+
+{% endblock %}

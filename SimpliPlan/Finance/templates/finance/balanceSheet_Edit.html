@@ -1,0 +1,162 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Balance Sheet</title>
+    <script>
+        // Find a <table> element with id="myTable":
+        function addAsset() {
+            var table = document.getElementById("assetTable");
+
+            // Create an empty <tr> element and add it to the 1st position of the table:
+            var row = table.insertRow(-1);
+
+            // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+            var cell5 = row.insertCell(4);
+
+            // Add some text to the new cells:
+            cell1.innerHTML = '<td><input type="text" class="form-control" name="asset[]" value="New Asset Name"></td>';
+            cell2.innerHTML = '<td><input type="number" step = 0.01 class="form-control" name="aValue[]" value="0"></td>';
+            cell3.innerHTML = '<td><input type="number" step = 0.01 class="form-control" name="aReturn[]" value="0.00"></td>';
+            cell4.innerHTML = '<td><input type="checkbox" name="deleteAsset[]" style="display: none;" value="no" class = "chk"></td>';
+            cell5.innerHTML = '<td><input type="number" class="form-control" style="display: none;" name="assetID[]" value="-1"></td>';
+        }
+        function addDebt() {
+            var table = document.getElementById("debtTable");
+
+            // Create an empty <tr> element and add it to the 1st position of the table:
+            var row = table.insertRow(-1);
+            
+            // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+            var cell5 = row.insertCell(4);
+            var cell6 = row.insertCell(5);
+
+            // Add some text to the new cells:  
+            cell1.innerHTML = '<td><input type="text" class="form-control" name="debt[]" placeholder="Debt Name"></td>';
+            cell2.innerHTML = '<td><input type="number" step = 0.01 class="form-control" name="totalDebt[]" value="Total Amount ($)"></td>';
+            cell3.innerHTML = '<td><input type="number" step = 0.01 class="form-control" name="paidDebt[]" value="0"></td>';
+            cell4.innerHTML = '<td><input type="number" step = 0.01 class="form-control" name="debtInterest[]" value="0.00"></td>';
+            cell5.innerHTML = '<td><input type="checkbox" name="deleteAsset[]" style="display: none;" value="no" class = "chk"></td>';
+            cell6.innerHTML = '<td><input type="number" class="form-control" style="display: none;" name="debtID[]" value="-1"></td>';
+        }
+    </script>
+</head>
+<body>
+    <form id="regForm" method = "POST" action='/finance/balanceSheet_Edit/'>
+        {% csrf_token %}
+        <div class="p-5 text-left bg-light" >
+            <button type="submit" class="btn btn-lg btn-dark col-md-12"><h1>Editing your Balance Sheet</h1> Save Changes</button>
+        </div>    
+        <div class="row">
+            <!--Asset-->
+            <div class="table-responsive col-md-6">
+                <center><h2 class="sub-header" style="background-color:rgb(145, 224, 224);" >Current Assets</h2></center>
+                <div class="table-responsive">
+                    <table id = "assetTable" class="table table-striped" style="background-color:rgb(207, 207, 207);">
+                        <thead>
+                            <tr>
+                                <th class="text-center">
+                                    Asset Name
+                                </th>
+                                <th class="text-center">
+                                    Total Amount ($)
+                                </th>
+                                <th class="text-center">
+                                    Returns
+                                </th>
+                                <th>
+                                    Delete
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for asset in asset_list %}
+                            <tr id = "{{asset.id}}">
+                                <td><input type="text" class="form-control" name="asset[]" value="{{asset.assetName}}"></td>
+                                <td><input type="number" step = 0.01 class="form-control" name="aValue[]" value="{{asset.amount}}"></td>
+                                <td><input type="number" step = 0.01 class="form-control" name="aReturn[]" value="{{asset.returns}}"></td>
+                                <td><input type="checkbox" name="deleteAsset[]" value="{{asset.id}}" class = 'chk'></td>
+                                <td><input type="number" class="form-control" style="display: none;" name="assetID[]" value="{{asset.id}}"></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn btn-lg btn-danger col-md-3" onclick="addAsset()">Add New Asset</button>
+                </div>
+            </div>
+            <!--Debt-->
+            <div class="table-responsive col-md-6">
+                <center><h2 class="sub-header" style="background-color:rgb(145, 224, 224);">Current Liabilities</h2></center>
+                <div class="table-responsive">
+                    <table id = "debtTable" class="table table-striped" style="background-color:rgb(207, 207, 207);">
+                        <thead>
+                            <tr>
+                                <th class="text-center">
+                                    Liability Name
+                                </th>
+                                <th class="text-center">
+                                    Total Amount ($)
+                                </th>
+                                <th class="text-center">
+                                    Total Repayment ($)
+                                </th>
+                                <th class="text-center">
+                                    Annual Interest
+                                </th>
+                                <th>
+                                    Delete
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for debt in debt_list %}
+                            <tr>
+                                <td><input type="text" class="form-control" name="debt[]" value="{{debt.debtName}}"></td>
+                                <td><input type="number" step = 0.01 class="form-control" name="totalDebt[]" value="{{debt.amount}}"></td>
+                                <td><input type="number" step = 0.01 class="form-control" name="paidDebt[]" value="{{debt.repayment}}"></td>
+                                <td><input type="number" step = 0.01 class="form-control" name="debtInterest[]" value="{{debt.interest}}"></td>
+                                <td><input type="checkbox" name="deleteDebt[]" value="{{debt.id}}" class = 'chk'></td>
+                                <td><input type="number" class="form-control" style="display: none;" name="debtID[]" value="{{debt.id}}"></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <button type="button" class="btn btn-lg btn-danger col-md-3" onclick="addDebt()">Add New Liabilities</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+<script>
+    //function to hide the row
+    $( document ).ready(function() {
+      $(":checkbox").on( "click", function() {
+        if (confirm('Are you sure you want to delete this record from the database?')) {
+            $( this ).parent().parent().css( "display", "none" );
+        } else {
+            // Do nothing!
+            $( this ).attr('checked', false);
+            console.log('Record is not deleted from the database.');
+        }
+      });
+    });
+</script>
+
+</html>
+{% endblock %}

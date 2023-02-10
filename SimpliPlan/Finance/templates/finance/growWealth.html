@@ -1,0 +1,213 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<!--Other shit for Tables-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-v4-grid-only@1.0.0/dist/bootstrap-grid.min.css">
+
+
+
+
+  <head>
+    <!--CSS for Form-->
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f1f1f1;
+    }
+
+    .container-chart {
+      background-color: #ffffff;
+      margin: 100px auto;
+      font-family: Raleway;
+      padding: 40px;
+      padding-bottom: 70px;
+      width: 70%;
+      min-width: 300px;
+    }
+
+    .row-width {
+      width: 80%;
+      margin: auto;
+    }
+
+    h1 {
+      text-align: center;  
+    }
+
+    input {
+      padding: 3px;
+      width: 100%;
+      font-size: 17px;
+      font-family: Raleway;
+      border-radius: 5%;
+      border: 1px solid #aaaaaa;
+    }
+
+
+
+    /* Hide all steps by default: */
+    .tab {
+      display: none;
+    }
+    .button {
+        background-color: #04AA6D;
+        color: #ffffff;
+        border: none;
+        padding: 5px 20px;
+        font-size: 17px;
+        font-family: Raleway;
+        cursor: pointer;
+        border-radius: 5%;
+    }  
+    .button:hover {
+      opacity: 0.8;
+    }
+    
+    button {
+      background-color: #04AA6D;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 17px;
+      font-family: Raleway;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+    .none{
+        display: none;
+    }
+    </style>
+
+  </head>
+  
+  <body>
+    <div class = "container-chart" >
+      <h1>Projection of your Finances</h1>
+      <div class="row row-width">
+        <canvas id="netWorthChart" ></canvas>
+      </div>
+      <div class="row">
+        <div class="col-6">
+          <canvas id="debtChart" ></canvas>
+        </div>
+        <div class="col-6">
+          <canvas id="cashFlowChart" ></canvas>
+        </div>
+      </div>
+      <br><br><br>
+      <div class = "list-group">
+        {% for advice in adviceList%}
+        {% if advice.1 == 1%}
+        <a href="#" class="list-group-item list-group-item-action list-group-item-success">{{advice.0}}</a>
+        {% elif advice.1 == -1 %}
+        <a href="#" class="list-group-item list-group-item-action list-group-item-danger">{{advice.0}}</a>
+        {% else %}
+        <a href="#" class="list-group-item list-group-item-action">{{advice.0}}</a>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+    <script>
+      var cashFlowData = {{cashFlowData|safe}};
+      var debtData = {{debtData|safe}};
+      var netWorthData = {{netWorthData|safe}};
+      for(i = 0; i <cashFlowData.length; i++){
+        console.log(cashFlowData[i])
+      };
+      let cashFlowctx = document.getElementById("cashFlowChart").getContext("2d");
+
+      let cashFlowChart = new Chart(cashFlowctx, {
+        type: "line",
+        data: {
+          labels: [1,2,3,4,5,6,7,8,9,10],
+          datasets: [
+              {
+                label: "Cashflow ($)",
+                borderColor: "#417690",
+                data: cashFlowData
+              }
+          ]
+        },
+        options: {
+          responsive: true,
+          title: {
+              text: "Cashflow over 10 years",
+              display: true,
+              fontSize: 16
+          }
+        }
+      });
+
+      let debtctx = document.getElementById("debtChart").getContext("2d");
+      let debtChart = new Chart(debtctx, {
+        type: "line",
+        data: {
+          labels: [1,2,3,4,5,6,7,8,9,10],
+          datasets: [
+              {
+                label: "Debt ($)",
+                //backgroundColor: "#79AEC8",
+                borderColor: "#417690",
+                data: debtData
+              }
+          ]
+        },
+        options: {
+          responsive: true,
+          title: {
+              text: "Debt over 10 years",
+              display: true,
+              fontSize: 16
+          }
+        }
+      });
+
+      let netWorthctx = document.getElementById("netWorthChart").getContext("2d");
+      let netWorthChart = new Chart(netWorthctx, {
+        type: "bar",
+        data: {
+          labels: [1,2,3,4,5,6,7,8,9,10],
+          datasets: [
+              {
+                label: "Net Worth ($)",
+                backgroundColor: "#79AEC8",
+                borderColor: "#417690",
+                data: netWorthData
+              }
+          ]
+        },
+        options: {
+          responsive: true,
+          title: {
+              text: "Net Worth over 10 years",
+              display: true,
+              fontSize: 16
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+    <!-- ======= Car Results Section ======= -->
+    <div class="container">
+        <div class="section-title pt-5 pb-1" data-aos="fade-up" data-aos-delay="100">
+            <h2>Select a Car</h2>
+            {% if errors %}
+              <h2 style="color: red; text-align: center;">Car model not found!</h2>
+              <a href="{% url 'car_search' %}"><button class="btn btn-outline-dark btn-lg px-5" type="submit">Return to search</button></a>
+            {% endif  %}
+        </div>
+
+    <section id="portfolio" class="portfolio">
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
+        {% for car in car_list %}
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{{ car.image.url }}" class="img-fluid" alt="{{ car.model }}">
+              <div class="portfolio-info">
+                <h4>{{ car.model }}</h4>
+                <h4>{{ car.spec }}</h4>
+                <h4>${{ car.currentPrice }}</h4>
+                <div class="portfolio-links">
+                  <a href="{{ car.image.url }}" data-gallery="portfolioGallery" class="portfolio-lightbox" title="{{ car.model }} {{ car.spec }}"><i class="bi-zoom-in"></i></a>
+                  <a href="{% url 'car_details' car.id %}" title="Select"><i class="bi-check-lg"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+        </div>
+
+      </div>
+    </section><!-- End Car Results Section -->
+
+{% endblock %}

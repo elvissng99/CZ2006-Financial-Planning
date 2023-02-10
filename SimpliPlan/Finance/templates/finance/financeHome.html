@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+ <!-- ======= Finance Homepage Section ======= -->
+
+<section id="team" class="team">
+{% if username %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+                <div class="member" data-aos="zoom-in">
+                    <div class="member-img">
+                        <a href="http://127.0.0.1:8000/finance/updateUserInfo/"><img src="{% static "nav/assets/img/updateInfo.jpg" %}" class="img-fluid" alt=""></a>
+                        <div class="member-info">
+                            <h4 style = "text-align: center;">Update Information</h4>
+                            <p style = "text-align: center;">Update your personal details!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+                <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="member-img">
+                        <a href="http://127.0.0.1:8000/finance/growWealth/"><img src="{% static "nav/assets/img/growwealth.jpg" %}" class="img-fluid" alt=""></a>
+                        <div class="member-info">
+                            <h4 style = "text-align: center;">Grow Your Wealth</h4>
+                            <p style = "text-align: center;">Analysis for your financial status!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+                <div class="member" data-aos="zoom-in">
+                    <div class="member-img">
+                        <a href="http://127.0.0.1:8000/finance/balanceSheet_Result/"><img src="{% static "nav/assets/img/paperpen.png" %}" class="img-fluid" alt=""></a>
+                        <div class="member-info">
+                            <h4 style = "text-align: center;">Balance Sheet</h4>
+                            <p style = "text-align: center;">Evaluate your assets and liabilities!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+                <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="member-img">
+                        <a href="http://127.0.0.1:8000/finance/cashFlow_Result/"><img src="{% static "nav/assets/img/moneycoin.jpg" %}" class="img-fluid" alt=""></a>
+                        <div class="member-info">
+                            <h4 style = "text-align: center;">Financial Information</h4>
+                            <p style = "text-align: center;">A quick glance at your cash flow status!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% else %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="zoom-in">
+                <div class="member-img">
+                    <a><img src="{% static "nav/assets/img/updateInfo.jpg" %}" class="img-fluid" alt=""></a>
+                    <div class="member-info">
+                        <h4 style = "text-align: center;">Update Information</h4>
+                        <p style = "text-align: center;">Update your personal details!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member-img">
+                    <a><img src="{% static "nav/assets/img/growwealth.jpg" %}" class="img-fluid" alt=""></a>
+                    <div class="member-info">
+                        <h4 style = "text-align: center;">Grow Your Wealth</h4>
+                        <p style = "text-align: center;">Analysis for your financial status!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="zoom-in">
+                <div class="member-img">
+                    <a><img src="{% static "nav/assets/img/paperpen.png" %}" class="img-fluid" alt=""></a>
+                    <div class="member-info">
+                        <h4 style = "text-align: center;">Balance Sheet</h4>
+                        <p style = "text-align: center;">Evaluate your assets and liabilities!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 d-flex align-items-stretch">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+                <div class="member-img">
+                    <a><img src="{% static "nav/assets/img/moneycoin.jpg" %}" class="img-fluid" alt=""></a>
+                    <div class="member-info">
+                        <h4 style = "text-align: center;">Financial Information</h4>
+                        <p style = "text-align: center;">A quick glance at your cash flow status!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endif %}
+</section>
+<!-- Finance Homepage Section -->
+    
+{% endblock %}
+
+

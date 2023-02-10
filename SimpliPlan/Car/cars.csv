@@ -1,0 +1,547 @@
+car_code,sub_code,make,model,spec,current_price,depreciation,down_payment,installment,coe,road_tax,omv,arf,fuel_economy,fuel_type,coe_incl
+12005,7373,Mercedes-Benz,Mercedes-Benz GLC-Class Coupe,GLC300 4MATIC (A),315888,27900,126355,2695,70200,1202,56484,73671,12.5,Petrol,True
+12005,7843,Mercedes-Benz,Mercedes-Benz GLC-Class Coupe,GLC43 AMG 4MATIC (A),402888,-,161155,3438,70200,2380,-,-,9.9,Petrol,True
+12005,7845,Mercedes-Benz,Mercedes-Benz GLC-Class Coupe,GLC63 S AMG 4MATIC+ (A),540888,-,216355,4615,70200,3920,-,-,8.3,Petrol,True
+12007,7435,Perodua,Perodua Bezza,1.3 Premium X (A),75999,7300,22800,757,47001,584,11040,5000,21,Petrol,True
+12016,5544,Volkswagen,Volkswagen Tiguan,1.4 TSI DSG Highline (A),168400,15200,67360,1437,70200,622,29673,33542,16.1,Petrol,True
+12016,8461,Volkswagen,Volkswagen Tiguan,2.0 TSI DSG Elegance (A),179900,-,71960,1535,70200,1194,-,-,14.5,Petrol,True
+12016,7425,Volkswagen,Volkswagen Tiguan,1.4 TSI DSG R-Line (A),181400,16200,72560,1548,70200,622,33731,39223,16.1,Petrol,True
+12016,8462,Volkswagen,Volkswagen Tiguan,2.0 TSI DSG R-Line (A),193900,-,77560,1655,70200,1194,-,-,14.5,Petrol,True
+12023,7252,Kia,Kia Niro Hybrid,1.6 EX (A),110999,10500,44400,947,47001,732,25126,12176,25,Petrol-Electric,True
+12023,7251,Kia,Kia Niro Hybrid,1.6 SX (A),125999,11700,50400,1075,47001,732,29308,18031,25,Petrol-Electric,True
+12030,5575,Maserati,Maserati Levante,3.0 V6 (A),350800,-,-,-,70200,2360,67670,93806,8.6,Petrol,False
+12030,6787,Maserati,Maserati Levante,3.0 V6 GranSport (A),387800,-,-,-,70200,2360,80591,117064,8.6,Petrol,False
+12032,8181,Audi,Audi Q2,1.5 TFSI S tronic (A),173949,16000,69580,1484,70200,684,24932,26905,19.6,Petrol,True
+12043,7344,Maxus,Maxus G10 Petrol,2.0 Panel Van (A),84988,-,8499,1088,38890,-,-,-,9.2,Petrol,True
+12052,7689,Mazda,Mazda MX-5 RF,2.0 (A),199888,-,79955,1706,70200,1210,-,-,14.9,Petrol,True
+12065,5701,Renault,Renault Grand Scenic Diesel,1.5T dCi (A),129999,12400,52000,1109,47001,1148,25514,12720,25,Diesel (Euro VI),True
+12069,8087,Volkswagen,Volkswagen Caddy Diesel,2.0 TDI DSG 6-Door Panel Van [Euro VI] (A),76000,-,7600,973,38890,-,-,-,20,Diesel (Euro VI),True
+12070,8082,Volkswagen,Volkswagen Transporter Diesel,T30 Panel Van [Euro VI] (A),90000,-,9000,1152,38890,-,-,-,15.6,Diesel (Euro VI),True
+12070,8083,Volkswagen,Volkswagen Transporter Diesel,T30 Panel Van LED [Euro VI] (A),92000,-,9200,1178,38890,-,-,-,15.6,Diesel (Euro VI),True
+12073,7900,Honda,Honda CR-V,1.5 Turbo 5-Seater (A),163299,-,65320,1393,70200,684,-,-,14.3,Petrol,True
+12073,7899,Honda,Honda CR-V,1.5 Turbo 7-Seater (A),188099,16900,75240,1605,70200,684,33368,38715,13.7,Petrol,True
+12074,5899,Lexus,Lexus LC 500,5.0 V8 (A),567800,-,227120,4845,70200,5464,-,-,8.6,Petrol,True
+12076,7908,MINI,MINI Cooper Countryman,1.5 (A),195888,-,78355,1671,70200,684,-,-,17.9,Petrol,True
+12077,7907,MINI,MINI Cooper S Countryman,2.0 (A),211888,18700,84755,1808,70200,1210,41805,50527,15.2,Petrol,True
+12077,8439,MINI,MINI Cooper S Countryman,2.0 John Cooper Works Trim (A),213888,-,85555,1825,70200,1210,-,-,15.2,Petrol,True
+12086,5752,McLaren,McLaren 720S Coupe,4.0 V8 (A),1043000,-,-,-,70200,3940,241603,406885,8.2,Petrol,False
+12090,7447,MINI,MINI John Cooper Works Clubman,2.0 (A),251888,-,100755,2149,70200,1210,-,-,13,Petrol,True
+12094,8056,Audi,Audi R8 Spyder,5.2 FSI RWD S tronic (A),735822,-,294329,6279,70200,5832,-,-,7.6,Petrol,True
+12112,8005,Subaru,Subaru XV,2.0i-S EyeSight (A),116800,10900,35040,1163,70200,1206,15195,15195,14.3,Petrol,True
+12112,8352,Subaru,Subaru XV,2.0i-S EyeSight GT Edition (A),118688,-,-,-,70200,1206,-,-,14.3,Petrol,True
+12126,5849,Ferrari,Ferrari 812 Superfast,6.5 V12 (A),1420000,-,-,-,70200,7852,404000,699200,6.8,Petrol,False
+12128,7953,Mazda,Mazda CX-5,2.0 Elegance (A),144888,13300,57955,1236,70200,1210,22201,23081,14.3,Petrol,True
+12128,7954,Mazda,Mazda CX-5,2.0 Luxury (A),154888,14000,61955,1322,70200,1210,26325,28855,14.3,Petrol,True
+12135,7834,SEAT,SEAT Ateca,1.4 TSI Xcellence 8-Speed (A),145999,13000,58400,1246,70200,622,27864,31010,16.1,Petrol,True
+12135,8187,SEAT,SEAT Ateca,1.4 TSI Style 8-Speed (A),158999,-,63600,1357,70200,312,-,-,16.1,Petrol,True
+12135,8188,SEAT,SEAT Ateca,1.4 TSI Xperience 8-Speed (A),166999,-,66800,1425,70200,312,-,-,16.1,Petrol,True
+12156,7723,Audi,Audi S5 Sportback,3.0 TFSI qu Tip (A),367518,-,147007,3136,70200,2380,-,-,11.4,Petrol,True
+12173,8070,BMW,BMW 5 Series Plug-in Hybrid,530e (A),312888,27600,125155,2670,70200,1210,56583,73849,52.6,Petrol,True
+12177,8317,Opel,Opel Crossland,1.2 Turbo GS Line (A),106500,10400,31950,1060,47001,508,19418,5000,19.6,Petrol,True
+12179,7469,Land Rover,Land Rover Range Rover Velar,2.0 Si4 R-Dynamic S Style Pack (A),338999,29500,135600,2893,70200,1208,64218,87592,13.2,Petrol,True
+12179,6868,Land Rover,Land Rover Range Rover Velar,2.0 Si4 R-Dynamic HSE (A),365999,31400,146400,3123,70200,1208,73172,103710,13.2,Petrol,True
+12180,7810,Volvo,Volvo XC40,T4 R-Design (A),194000,17800,77600,1655,70200,1176,28456,31838,12.7,Petrol,True
+12180,6150,Volvo,Volvo XC40,T5 R-Design (A),210000,19300,84000,1792,70200,1176,30643,34900,13,Petrol,True
+12183,6559,Audi,Audi A8L Mild Hybrid,3.0 TFSI qu Tip (A),488449,43000,195380,4168,70200,2380,80421,116758,12.2,Petrol-Electric,True
+12193,8147,Kia,Kia Stinger,2.0 GT Line (A),204999,18400,82000,1749,70200,1210,35816,42142,12,Petrol,True
+12193,8313,Kia,Kia Stinger,3.3 GT V6 (A),250999,-,100400,2142,70200,2920,-,-,10.4,Petrol,True
+12194,6052,SEAT,SEAT Alhambra,1.4 TSI DSG Style (A),160999,-,64400,1374,70200,622,-,-,14.9,Petrol,True
+12194,6274,SEAT,SEAT Alhambra,2.0 TSI DSG Style (A),165999,-,66400,1416,70200,1194,-,-,13.6,Petrol,True
+12207,6088,Lamborghini,Lamborghini Urus,4.0 V8 (A),798000,-,-,-,70200,3942,179532,295158,7.8,Petrol,False
+12208,6089,Opel,Opel Insignia Grandsport,1.5 Turbo Innovation (A),144500,13000,57800,1233,70200,678,25891,28247,16.3,Petrol,True
+12209,6090,Toyota,Toyota Vios,1.5 E Grade (A),98888,9200,29666,984,47001,682,13891,13891,17.2,Petrol,True
+12209,6091,Toyota,Toyota Vios,1.5 G Grade (A),104888,9700,31466,1044,47001,682,15705,15705,17.2,Petrol,True
+12210,6171,SEAT,SEAT Arona,1.0 EcoTSI DSG Style (A),99999,9500,30000,995,47001,390,19363,9363,20,Petrol,True
+12210,7198,SEAT,SEAT Arona,1.0 EcoTSI DSG Style Plus (A),101999,-,-,-,47001,390,-,-,20,Petrol,True
+12210,6172,SEAT,SEAT Arona,1.0 EcoTSI DSG FR (A),107999,10500,43200,922,47001,390,21156,6618,20,Petrol,True
+12210,8159,SEAT,SEAT Arona,1.5 EcoTSI DSG FR (A),125999,-,-,-,70200,684,-,-,20,Petrol,True
+12211,8335,Land Rover,Land Rover Discovery,2.0 SE 7-Seater (A),379999,-,152000,3242,70200,1208,-,-,10.5,Petrol,True
+12218,6142,Mitsubishi,Mitsubishi Eclipse Cross,1.5T Style (A),POA,-,-,-,70200,684,24594,26432,14.9,Petrol,True
+12218,7318,Mitsubishi,Mitsubishi Eclipse Cross,1.5T Style Panoramic Roof (A),POA,-,-,-,70200,684,27157,30020,14.9,Petrol,True
+12226,8218,Maserati,Maserati Quattroporte,3.0 V6 (A),428800,-,-,-,70200,2360,-,-,8.8,Petrol,False
+12226,8219,Maserati,Maserati Quattroporte,3.8 V8 Trofeo (A),668800,-,-,-,70200,3634,-,-,7.9,Petrol,False
+12230,7934,Hyundai,Hyundai i30 Hatchback,1.0 DCT Turbo (A),104999,9700,31500,1045,47001,390,16297,16297,18.9,Petrol,True
+12232,7259,BMW,BMW X3,sDrive20i M Sport (A),270888,24300,108355,2311,70200,1210,45951,56331,13.5,Petrol,True
+12232,6191,BMW,BMW X3,xDrive30i M Sport (A),302888,26500,121155,2585,70200,1210,57135,74843,14.3,Petrol,True
+12237,6181,Maxus,Maxus G10 Executive MPV,2.0T 7-Seater (A),162999,14900,65200,1391,70200,1206,25389,27545,8.5,Petrol,True
+12237,6190,Maxus,Maxus G10 Executive MPV,2.0T 9-Seater (A),162999,-,65200,1391,70200,1206,-,-,8.5,Petrol,True
+12244,8079,Lexus,Lexus LS Hybrid,500h Luxury (A),581800,-,232720,4964,70200,3098,-,-,14.9,Petrol-Electric,True
+12244,8102,Lexus,Lexus LS Hybrid,500h Ultra Luxury (A),621800,-,248720,5306,70200,3098,-,-,14.9,Petrol-Electric,True
+12246,7328,Hyundai,Hyundai Ioniq Electric,38.3kWh (A),149888,-,59955,1279,70200,1060,-,-,11.7,Electric,True
+12246,7353,Hyundai,Hyundai Ioniq Electric,38.3kWh Sunroof (A),154888,15200,61955,1322,70200,1060,39799,5000,11.7,Electric,True
+12247,7317,SEAT,SEAT Ibiza,1.0 EcoTSI DSG Style Plus (A),95999,-,-,-,47001,390,-,-,21.2,Petrol,True
+12247,8163,SEAT,SEAT Ibiza,1.5 EcoTSI DSG FR (A),111999,-,-,-,70200,684,-,-,20,Petrol,True
+12247,8351,SEAT,SEAT Ibiza,1.5 FR Plus (A),116999,-,-,-,47001,684,-,-,20,Petrol,True
+12254,8235,Opel,Opel Grandland,1.2 Turbo Elegance (A),121500,11500,48600,1037,47001,508,25242,12339,16.6,Petrol,True
+12256,6271,Ssangyong,Ssangyong Rexton,2.0 7-Seater (A),199888,-,79955,1706,70200,1210,-,-,9.6,Petrol,True
+12258,8006,Alfa Romeo,Alfa Romeo Giulia,Super (A),225000,-,90000,1920,70200,1206,-,-,16.7,Petrol,True
+12258,7974,Alfa Romeo,Alfa Romeo Giulia,Veloce (A),260000,23300,104000,2219,70200,1206,43608,53051,15.9,Petrol,True
+12258,7975,Alfa Romeo,Alfa Romeo Giulia,Quadrifoglio (A),395000,34900,158000,3370,70200,2258,66246,91243,12.2,Petrol,True
+12262,8150,BMW,BMW X2,sDrive18i M Mesh Edition (A),216888,19300,86755,1851,70200,684,39438,47213,16.4,Petrol,True
+12262,6614,BMW,BMW X2,sDrive18i M Sport X (A),216888,19300,86755,1851,70200,684,39377,47128,16.6,Petrol,True
+12264,8455,SKODA,SKODA Kodiaq,1.5 TSI Ambition Plus 7-Seater (A),169900,-,67960,1450,70200,622,-,-,16.1,Petrol,True
+12264,8456,SKODA,SKODA Kodiaq,1.5 TSI Sportline 7-Seater (A),184900,-,73960,1578,70200,622,-,-,16.4,Petrol,True
+12264,6307,SKODA,SKODA Kodiaq,2.0 TSI 4X4 Style 7-Seater (A),199900,17900,79960,1706,70200,1194,35019,41027,13.5,Petrol,True
+12264,6961,SKODA,SKODA Kodiaq,2.0 TSI Laurin & Klement 7-Seater (A),209900,18800,83960,1791,70200,1194,36610,43254,13.5,Petrol,True
+12267,7655,SKODA,SKODA Superb,2.0 TSI Laurin & Klement (A),POA,-,-,-,70200,1194,33211,38495,13,Petrol,True
+12267,7654,SKODA,SKODA Superb,2.0 TSI Ambition (A),159900,14400,63960,1364,70200,1194,27774,30884,13,Petrol,True
+12270,6319,Porsche,Porsche Cayenne,3.0 (A),350988,-,-,-,70200,2380,93491,140284,10.8,Petrol,False
+12270,6320,Porsche,Porsche Cayenne,S 2.9 (A),441488,-,-,-,70200,2260,102067,155721,10.6,Petrol,False
+12270,6322,Porsche,Porsche Cayenne,Turbo 4.0 (A),614688,-,-,-,70200,3942,-,-,8.5,Petrol,False
+12274,6346,BMW M Series,BMW M Series X3 M40i,3.0 (A),369888,31800,147955,3156,70200,2360,72807,103053,11.2,Petrol,True
+12275,8191,Hyundai,Hyundai i30 Wagon,1.0 DCT Turbo (A),107999,10000,32400,1075,47001,390,16741,16741,18.9,Petrol,True
+12284,6374,Toyota,Toyota Prius+ Hybrid,1.8 (A),153888,14600,61555,1313,70200,976,28004,16206,25.6,Petrol-Electric,True
+12289,6400,Renault,Renault Zoe Electric,41 kWh 5-door (A),POA,-,-,-,47001,814,33840,5000,16.1,Electric,True
+12290,6401,Renault,Renault Kangoo E-Tech Electric,LWB 33.1 kWh (A),103800,-,10380,1329,38890,-,-,-,15.9,Electric,True
+12295,7952,Ferrari,Ferrari Portofino,M 3.9 V8 (A),898000,-,-,-,70200,3722,-,-,8.8,Petrol,False
+12297,8162,BMW M Series,BMW M Series M5 Sedan,4.4 Competition (A),577888,48000,231155,4931,70200,4566,124642,196356,8.8,Petrol,True
+12299,6548,Rolls-Royce,Rolls-Royce Cullinan,6.75 V12 (A),POA,-,-,-,70200,8248,230932,387678,6.6,Petrol,True
+12300,7700,Audi,Audi RS 4 Avant,2.9 TFSI qu Tip (A),441405,38100,176562,3766,70200,2260,82232,120018,10.5,Petrol,True
+12302,8127,Mazda,Mazda CX-3,1.5 Classic (A),101888,9400,30566,1014,47001,682,15882,15882,14.9,Petrol,True
+12302,8128,Mazda,Mazda CX-3,1.5 Elegance (A),107888,9800,32366,1074,47001,682,19536,19536,14.9,Petrol,True
+12303,6441,Aston Martin,Aston Martin DB11 Volante,4.0 (A),POA,-,-,-,70200,3920,-,-,10,Petrol,True
+12304,6442,Aston Martin,Aston Martin Vantage,4.0 (A),POA,-,-,-,70200,3920,154652,250374,9.7,Petrol,True
+12306,6444,Aston Martin,Aston Martin V12 DBS Superleggera,5.2 V12 (A),POA,-,-,-,70200,5832,-,-,8,Petrol,True
+12312,8273,MINI,MINI John Cooper Works Convertible,2.0 (A),231888,-,92755,1979,70200,1210,-,-,15.6,Petrol,True
+12314,8272,MINI,MINI John Cooper Works 3-Door,2.0 (A),220888,-,88355,1885,70200,1210,-,-,15.6,Petrol,True
+12316,8282,MINI,MINI Cooper 3-Door,1.5 (A),191888,-,76755,1637,70200,684,-,-,15.6,Petrol,True
+12323,6490,Mazda,Mazda 6 Sedan,2.0 Standard (A),127888,11800,38366,1273,70200,1210,19507,19507,14.7,Petrol,True
+12323,6491,Mazda,Mazda 6 Sedan,2.0 Executive (A),135888,12400,54355,1160,70200,1210,22668,23735,14.7,Petrol,True
+12325,6496,BMW ALPINA,BMW ALPINA B5 Bi-Turbo Saloon,4.4 V8 (A),465800,-,-,-,70200,4566,123388,194098,9.5,Petrol,False
+12328,8328,MINI,MINI Cooper Convertible,1.5 (A),204888,-,81955,1748,70200,684,-,-,15.6,Petrol,True
+12332,6510,Land Rover,Land Rover Range Rover Sport,5.0 V8 S/C SVR (A),639999,-,256000,5461,70200,5514,-,-,7.8,Petrol,True
+12339,8270,MINI,MINI Cooper S Convertible,2.0 (A),221888,-,88755,1893,70200,1210,-,-,15.2,Petrol,True
+12340,8279,MINI,MINI Cooper S 3-Door,2.0 (A),208888,-,83555,1782,70200,1210,-,-,15.2,Petrol,True
+12341,8277,MINI,MINI Cooper S 5-Door,2.0 (A),211888,-,84755,1808,70200,1210,-,-,15.2,Petrol,True
+12342,8396,MINI,MINI Cooper 5-Door,1.5 (A),194888,-,77955,1663,70200,684,-,-,15.6,Petrol,True
+12343,6675,Subaru,Subaru Forester,2.0i-L EyeSight (A),136800,12800,41040,1362,70200,1206,17963,17963,13.5,Petrol,True
+12343,6676,Subaru,Subaru Forester,2.0i-S EyeSight (A),139800,13000,41940,1392,70200,1206,19876,19876,13.5,Petrol,True
+12344,6537,Nissan,Nissan Cabstar Petrol,2.0 (M),69800,-,6980,893,38890,-,-,-,9.5,Petrol,True
+12344,6538,Nissan,Nissan Cabstar Petrol,2.0 (A),72800,-,7280,932,38890,-,-,-,8.6,Petrol,True
+12351,6561,BMW,BMW X4,xDrive20i xLine (A),285888,25500,114355,2439,70200,1210,49273,60982,13.7,Petrol,True
+12351,7258,BMW,BMW X4,xDrive20i M Sport (A),290888,25900,116355,2482,70200,1210,50783,63409,14,Petrol,True
+12358,7860,Renault,Renault Megane RS,1.8T TCe (A),227999,-,91200,1945,70200,976,-,-,12.2,Petrol,True
+12359,6587,BMW M Series,BMW M Series X4 M40i,3.0 (A),387888,33300,155155,3310,70200,2382,76248,109246,10.8,Petrol,True
+12363,6768,Lexus,Lexus UX 200,2.0 Executive (A),189800,16900,75920,1620,70200,1196,35342,41479,17.2,Petrol,True
+12363,6769,Lexus,Lexus UX 200,2.0 Luxury (A),199800,17700,79920,1705,70200,1196,38119,45367,17.2,Petrol,True
+12370,6802,Mercedes-Benz,Mercedes-Benz CLS-Class Mild Hybrid,CLS53 AMG 4MATIC (A),515888,43200,206355,4402,70200,2384,108931,168076,11.2,Petrol-Electric,True
+12373,6627,Lexus,Lexus ES 300h Hybrid,2.5 Executive (A),264800,23700,105920,2260,70200,1784,45915,56281,21.7,Petrol-Electric,True
+12373,6628,Lexus,Lexus ES 300h Hybrid,2.5 Luxury (A),282800,25100,113120,2413,70200,1784,51178,64120,21.7,Petrol-Electric,True
+12374,6629,Lexus,Lexus ES 250,2.5 Executive (A),252800,22900,101120,2157,70200,1784,40319,48447,15.1,Petrol,True
+12374,6630,Lexus,Lexus ES 250,2.5 Luxury (A),272800,24300,109120,2328,70200,1784,47986,59180,15.1,Petrol,True
+12375,7949,Citroen,Citroen Grand C4 SpaceTourer,1.2 Exclusive (A),124999,11200,50000,1067,47001,508,24808,26731,19.2,Petrol,True
+12380,6651,Audi,Audi Q8 Mild Hybrid,3.0 TFSI qu Tip (A),425779,37300,170312,3633,70200,2380,73970,105146,11.2,Petrol-Electric,True
+12385,8113,Audi,Audi A7 Sportback Mild Hybrid,2.0 TFSI S tronic (A),318046,-,127218,2714,70200,1194,-,-,15.6,Petrol-Electric,True
+12385,6669,Audi,Audi A7 Sportback Mild Hybrid,3.0 TFSI qu S tronic (A),423887,-,169555,3617,70200,2698,-,-,13.7,Petrol-Electric,True
+12387,6672,Volkswagen,Volkswagen Polo,1.0 TSI DSG Comfortline (A),107400,9800,32220,1069,47001,390,17815,17815,20.4,Petrol,True
+12387,6673,Volkswagen,Volkswagen Polo,1.0 TSI DSG Beats (A),114400,10400,45760,976,47001,390,21150,21610,20.4,Petrol,True
+12391,7947,SKODA,SKODA Karoq,1.4 TSI Ambition (A),158900,14600,63560,1356,70200,622,23474,24864,15.2,Petrol,True
+12391,7948,SKODA,SKODA Karoq,1.4 TSI Style (A),168900,15500,67560,1441,70200,622,26163,28628,15.2,Petrol,True
+12392,8008,Alfa Romeo,Alfa Romeo Stelvio,Super (A),255000,-,102000,2176,70200,1206,-,-,14.3,Petrol,True
+12392,8009,Alfa Romeo,Alfa Romeo Stelvio,Veloce (A),299000,-,119600,2551,70200,1206,-,-,14.3,Petrol,True
+12392,8010,Alfa Romeo,Alfa Romeo Stelvio,Quadrifoglio (A),399000,-,159600,3405,70200,2258,-,-,10.2,Petrol,True
+12395,6820,Mercedes-Benz,Mercedes-Benz A-Class Hatchback,A180 Progressive (A),168888,15100,67555,1441,47001,586,31227,35718,16.9,Petrol,True
+12395,6701,Mercedes-Benz,Mercedes-Benz A-Class Hatchback,A200 Progressive (A),207888,-,83155,1774,70200,586,-,-,17.9,Petrol,True
+12395,6702,Mercedes-Benz,Mercedes-Benz A-Class Hatchback,A200 AMG Line (A),210888,19200,84355,1799,70200,586,32461,37445,17.9,Petrol,True
+12395,6703,Mercedes-Benz,Mercedes-Benz A-Class Hatchback,A250 AMG Line (A),232888,-,93155,1987,70200,1202,-,-,15.4,Petrol,True
+12395,7695,Mercedes-Benz,Mercedes-Benz A-Class Hatchback,A35 AMG 4MATIC (A),276888,-,110755,2363,70200,1202,-,-,13.5,Petrol,True
+12395,7691,Mercedes-Benz,Mercedes-Benz A-Class Hatchback,A45 S AMG 4MATIC+ (A),355888,31300,142355,3037,70200,1202,62921,85258,11.2,Petrol,True
+12396,8333,Kia,Kia Stonic,1.0T EX (A),89999,8700,27000,896,47001,390,17455,5000,18.5,Petrol,True
+12404,7778,Mercedes-Benz,Mercedes-Benz B-Class,B180 Progressive (A),165888,14700,66355,1415,47001,586,32685,37759,16.9,Petrol,True
+12404,6987,Mercedes-Benz,Mercedes-Benz B-Class,B200 Progressive (A),217888,19800,87155,1859,70200,586,34132,39785,17.5,Petrol,True
+12404,7138,Mercedes-Benz,Mercedes-Benz B-Class,B200 AMG Line (A),223888,-,89555,1910,70200,586,-,-,17.5,Petrol,True
+12405,6938,BMW,BMW Z4 Roadster,sDrive20i Sport (A),POA,-,-,-,70200,1210,50102,62184,15.4,Petrol,True
+12406,7690,BMW,BMW 3 Series Sedan,318i Sport (A),228888,20400,91555,1953,70200,1210,41367,49914,17.2,Petrol,True
+12406,8385,BMW,BMW 3 Series Sedan,318i M Sport (A),236888,21000,94755,2021,70200,1210,43708,53191,17.2,Petrol,True
+12406,7265,BMW,BMW 3 Series Sedan,320i M Sport (A),280888,25000,112355,2397,70200,1210,49629,61481,17.2,Petrol,True
+12410,7426,BMW,BMW 8 Series Coupe,840i Shadow Line (A),518888,-,207555,4428,70200,2382,-,-,13,Petrol,True
+12411,7694,Mercedes-Benz,Mercedes-Benz C-Class Saloon,C180 Avantgarde (A),242888,22200,97155,2073,70200,682,35584,41818,15.4,Petrol,True
+12412,7721,Mercedes-Benz,Mercedes-Benz C-Class Coupe,C180 (A),253888,22900,101555,2166,70200,682,40747,49046,15.4,Petrol,True
+12417,7767,Mercedes-Benz,Mercedes-Benz C-Class Cabriolet,C180 (A),285888,-,114355,2439,70200,682,-,-,13.9,Petrol,True
+12423,7475,Audi,Audi A6 Sedan Mild Hybrid,2.0 TFSI S tronic Design [190hp] (A),265713,24000,106285,2267,70200,1194,41892,50649,16.1,Petrol-Electric,True
+12423,7178,Audi,Audi A6 Sedan Mild Hybrid,2.0 TFSI S tronic Design [245hp] (A),275951,24900,110380,2355,70200,1194,44090,53726,14.3,Petrol-Electric,True
+12423,6758,Audi,Audi A6 Sedan Mild Hybrid,3.0 TFSI qu S tronic Sport (A),393138,34900,157255,3355,70200,2380,65139,89250,13.9,Petrol-Electric,True
+12424,7742,DS,DS 7 Crossback,1.6 Grand Chic 180PS (A),189999,17000,76000,1621,70200,742,34353,40094,18.1,Petrol,True
+12424,6859,DS,DS 7 Crossback,1.6 Grand Chic 180PS [Sunroof] (A),193999,17100,77600,1655,70200,742,38078,45309,18.1,Petrol,True
+12426,8320,Hyundai,Hyundai Kona Electric,39.2kWh (A),151888,-,60755,1296,70200,1060,-,-,13,Electric,True
+12426,8321,Hyundai,Hyundai Kona Electric,39.2kWh Sunroof (A),156888,-,62755,1339,70200,1060,-,-,13,Electric,True
+12426,8322,Hyundai,Hyundai Kona Electric,64.0kWh Sunroof (A),176888,-,70755,1509,70200,1646,-,-,13.8,Electric,True
+12428,6776,Toyota,Toyota RAV4,2.0 (A),162888,14600,65155,1390,70200,1196,30048,34067,16.7,Petrol,True
+12430,7471,Audi,Audi Q3,1.4 TFSI S tronic [17" Rim] (A),187890,17300,75156,1603,70200,622,27591,30627,14.3,Petrol,True
+12431,6841,Jeep,Jeep Wrangler Sahara 4-Door,2.0 Turbo (A),265999,24100,106400,2270,70200,1206,40994,49392,11.6,Petrol,True
+12435,7790,Bentley,Bentley Continental GT,4.0 V8 (A),POA,-,-,-,70200,3942,212948,355306,9.5,Petrol,True
+12435,6786,Bentley,Bentley Continental GT,6.0 W12 (A),POA,-,-,-,70200,6998,-,-,8.2,Petrol,True
+12436,7820,Bentley,Bentley Continental GT Convertible,4.0 V8 (A),POA,-,-,-,70200,3942,245221,413398,9.2,Petrol,True
+12436,6789,Bentley,Bentley Continental GT Convertible,6.0 W12 (A),POA,-,-,-,70200,6998,-,-,8.1,Petrol,True
+12437,6796,Golden Dragon,Golden Dragon XML6112 Diesel,6.7 [Euro VI] (A),POA,-,-,-,38890,-,-,-,,Diesel (Euro VI),True
+12440,6805,Lexus,Lexus UX 250h Hybrid,2.0 Executive (A),199800,18300,79920,1705,70200,1196,41062,34487,22.2,Petrol-Electric,True
+12440,6806,Lexus,Lexus UX 250h Hybrid,2.0 Luxury (A),209800,19000,83920,1790,70200,1196,44062,38687,22.2,Petrol-Electric,True
+12441,8434,Jaguar,Jaguar I-PACE Electric,SE 90 kWh (A),360999,-,144400,3080,70200,3586,-,-,23,Electric,True
+12441,6811,Jaguar,Jaguar I-PACE Electric,First Edition 90 kWh (A),395999,35000,158400,3379,70200,3586,86371,92468,23,Electric,True
+12444,6942,BMW,BMW X5,xDrive40i X Line 7-Seater (A),392888,33200,157155,3352,70200,2382,83608,122494,10.9,Petrol,True
+12444,7501,BMW,BMW X5,xDrive40i M Sport 7-Seater (A),402888,33800,161155,3438,70200,2382,87860,130148,10.9,Petrol,True
+12445,6863,Nissan,Nissan Leaf Electric,40 kWh (A),162800,-,65120,1389,70200,1178,-,-,17.1,Electric,True
+12446,6830,Golden Dragon,Golden Dragon XML6129 Diesel,8.9 49-Seater 2-door [Euro VI] (A),POA,-,-,-,38890,-,-,-,,Diesel (Euro VI),True
+12446,7002,Golden Dragon,Golden Dragon XML6129 Diesel,8.9 53-Seater 1-door [Euro VI] (A),POA,-,-,-,38890,-,-,-,,Diesel (Euro VI),True
+12450,7170,Toyota,Toyota GR Supra,3.0 (A),237888,-,-,-,70200,2382,-,-,13,Petrol,False
+12451,7022,BMW,BMW X7,xDrive40i Pure Excellence 7-Seater (A),507888,43100,203155,4334,70200,2382,100607,153093,9.2,Petrol,True
+12451,7257,BMW,BMW X7,xDrive40i M Sport 7-Seater (A),515888,43300,206355,4402,70200,2382,107305,165149,9.2,Petrol,True
+12452,7107,BMW,BMW 7 Series,730Li Pure Excellence (A),458888,-,183555,3916,70200,1210,-,-,14,Petrol,True
+12452,7260,BMW,BMW 7 Series,730Li M Sport (A),461888,39400,184755,3941,70200,1210,91142,136056,14,Petrol,True
+12452,7108,BMW,BMW 7 Series,740Li Pure Excellence (A),490888,-,196355,4189,70200,2382,-,-,12.7,Petrol,True
+12452,7267,BMW,BMW 7 Series,740Li M Sport (A),498888,-,199555,4257,70200,2382,-,-,12.7,Petrol,True
+12453,8329,Land Rover,Land Rover Range Rover Evoque Mild Hybrid,1.5 R-Dynamic SE (A),248999,-,99600,2125,70200,682,-,-,14.9,Petrol-Electric,True
+12453,6977,Land Rover,Land Rover Range Rover Evoque Mild Hybrid,2.0 Si4 R Dynamic SE [200PS] (A),272999,24600,109200,2329,70200,1208,43651,53111,12.7,Petrol-Electric,True
+12453,7421,Land Rover,Land Rover Range Rover Evoque Mild Hybrid,2.0 Si4 R-Dynamic HSE [249PS] (A),291999,26200,116800,2492,70200,1208,49207,60890,12.3,Petrol-Electric,True
+12454,8457,Porsche,Porsche Macan,PDK 2.0 (A),260888,-,-,-,70200,1194,-,-,11.2,Petrol,False
+12454,8458,Porsche,Porsche Macan,S PDK 2.9 (A),299988,-,-,-,70200,2260,-,-,10.4,Petrol,False
+12454,8459,Porsche,Porsche Macan,GTS PDK 2.9 (A),359988,-,-,-,70200,2260,-,-,10,Petrol,False
+12455,7637,Porsche,Porsche 911,Carrera PDK 3.0 (A),486788,-,-,-,70200,2362,126762,200172,10.6,Petrol,False
+12455,6986,Porsche,Porsche 911,Carrera S PDK 3.0 (A),554588,-,-,-,70200,2362,146183,235129,10.5,Petrol,False
+12455,6985,Porsche,Porsche 911,Carrera 4S PDK 3.0 (A),592088,-,-,-,70200,2362,-,-,10.4,Petrol,False
+12455,7642,Porsche,Porsche 911,Turbo S PDK 3.8 (A),932488,-,-,-,70200,3550,-,-,,Petrol,False
+12456,7167,Porsche,Porsche 911 Cabriolet,Carrera PDK 3.0 (A),552488,-,-,-,70200,2362,-,-,10.4,Petrol,False
+12456,7634,Porsche,Porsche 911 Cabriolet,Carrera 4 PDK 3.0 (A),589988,-,-,-,70200,2362,-,-,10.4,Petrol,False
+12456,7635,Porsche,Porsche 911 Cabriolet,Carrera S PDK 3.0 (A),620288,-,-,-,70200,2362,-,-,10.4,Petrol,False
+12456,7636,Porsche,Porsche 911 Cabriolet,Carrera PDK 4S 3.0 (A),657788,-,-,-,70200,2362,-,-,10.4,Petrol,False
+12457,6849,BMW M Series,BMW M Series M850i Coupe,4.4 xDrive (A),653888,56700,261555,5580,70200,4566,112250,174050,9.6,Petrol,True
+12460,6880,Peugeot,Peugeot Partner Diesel,1.5 BlueHDi LWB [Euro VI] (A),91888,9200,9189,1176,38890,-,22600,1130,21.7,Diesel (Euro VI),True
+12461,6869,SEAT,SEAT Tarraco,1.4 TSI DSG Style 7-Seater (A),154999,-,62000,1323,70200,622,-,-,13.7,Petrol,True
+12461,6870,SEAT,SEAT Tarraco,1.4 TSI DSG Xcellence 7-Seater (A),160999,14200,64400,1374,70200,622,32789,37905,13.7,Petrol,True
+12462,6878,Perodua,Perodua Myvi,1.3 X (A),79999,7700,24000,796,47001,584,12347,5000,21.1,Petrol,True
+12471,8133,SKODA,SKODA Scala,1.5 TSI Ambition (A),119900,-,35970,1194,70200,684,-,-,19.6,Petrol,True
+12471,8134,SKODA,SKODA Scala,1.5 TSI Style (A),129900,-,51960,1108,70200,684,-,-,19.6,Petrol,True
+12471,8135,SKODA,SKODA Scala,1.5 TSI Monte Carlo (A),135900,-,54360,1160,70200,684,-,-,19.6,Petrol,True
+12476,6928,Alpine,Alpine A110,1.8 Pure (A),248800,-,-,-,70200,976,52000,65600,15.6,Petrol,False
+12476,7759,Alpine,Alpine A110,1.8 Legende (A),258800,-,-,-,70200,976,-,-,15.6,Petrol,False
+12476,8347,Alpine,Alpine A110,1.8 S (A),268800,-,-,-,70200,976,-,-,14.3,Petrol,False
+12478,6932,Porsche,Porsche Cayenne E-Hybrid,3.0 (A),405488,-,-,-,70200,2380,-,-,31.25,Petrol-Electric,False
+12481,6936,Suzuki,Suzuki Jimny,1.5 Standard (A),112900,-,-,-,47001,662,-,-,14.4,Petrol,True
+12481,6937,Suzuki,Suzuki Jimny,1.5 Standard Two-Tone (A),113900,-,-,-,47001,662,-,-,14.4,Petrol,True
+12481,7220,Suzuki,Suzuki Jimny,1.5 Premium (A),115900,-,-,-,47001,662,-,-,14.4,Petrol,True
+12481,7221,Suzuki,Suzuki Jimny,1.5 Premium Two-Tone (A),116900,-,-,-,47001,662,-,-,14.4,Petrol,True
+12482,7277,Renault,Renault Kadjar,1.3T TCe  (A),130999,12100,39300,1304,70200,586,19900,19900,15.9,Petrol,True
+12482,8378,Renault,Renault Kadjar,1.3T TCe Bold Edition (A),133999,12400,40200,1334,70200,586,19900,19900,16.9,Petrol,True
+12482,8380,Renault,Renault Kadjar,1.3T TCe Bose Edition (A),156999,14500,62800,1340,70200,586,23500,24900,16.9,Petrol,True
+12483,8470,Citroen,Citroen C5 Aircross,1.6 PureTech 180 EAT8 Feel Pack (A),141999,-,56800,1212,70200,742,-,-,17.9,Petrol,True
+12485,7086,Mazda,Mazda 3 Sedan Mild Hybrid,1.5 Classic (A),98888,9600,39555,844,47001,682,20029,5041,18.1,Petrol-Electric,True
+12485,7084,Mazda,Mazda 3 Sedan Mild Hybrid,1.5 Elegance (A),103888,9900,41555,886,47001,682,23233,9526,18.1,Petrol-Electric,True
+12485,7085,Mazda,Mazda 3 Sedan Mild Hybrid,1.5 Astina (A),110888,10500,44355,946,47001,682,24770,11678,18.1,Petrol-Electric,True
+12486,7088,Mazda,Mazda 3 Hatchback Mild Hybrid,1.5 Astina (A),115888,10900,46355,989,47001,682,26370,13918,18.1,Petrol-Electric,True
+12498,6997,Porsche,Porsche Cayenne Coupe,3.0 (A),367688,-,-,-,70200,2380,91107,135993,10.1,Petrol,False
+12498,7589,Porsche,Porsche Cayenne Coupe,S 2.9 (A),457688,-,-,-,70200,2260,-,-,10,Petrol,False
+12498,7739,Porsche,Porsche Cayenne Coupe,GTS 4.0 (A),541288,-,-,-,70200,3942,-,-,8.19,Petrol,False
+12498,6998,Porsche,Porsche Cayenne Coupe,Turbo 4.0 (A),629388,-,-,-,70200,3942,-,-,8.1,Petrol,False
+12503,7024,BMW,BMW i3s Electric,BEV Suite [120Ah] (A),226888,-,90755,1936,70200,1470,-,-,-,Electric,True
+12505,7362,Ferrari,Ferrari F8 Tributo,3.9 V8 (A),998000,-,-,-,70200,3796,280000,-,7.8,Petrol,False
+12509,8427,Kia,Kia Niro Electric,Short Range 39.2 kWh (A),159999,-,64000,1365,70200,1060,-,-,15.3,Electric,True
+12509,7044,Kia,Kia Niro Electric,Long Range 64 kWh (A),169999,-,68000,1451,70200,1646,-,-,14.7,Electric,True
+12511,7053,BMW ALPINA,BMW ALPINA B5 Bi-Turbo Touring,4.4 V8 (A),480800,-,-,-,70200,4566,-,-,9,Petrol,False
+12512,7054,Mercedes-Benz,Mercedes-Benz AMG GT 4-Door Coupe Mild Hybrid,53 4MATIC+ (A),614888,-,245955,5247,70200,2384,-,-,10.6,Petrol-Electric,True
+12513,7055,Mercedes-Benz,Mercedes-Benz AMG GT 4-Door Coupe,63 S 4MATIC+ (A),813888,-,325555,6945,70200,3920,-,-,8.9,Petrol,True
+12515,7057,Jeep,Jeep Wrangler Sahara 2-Door,2.0 Turbo (A),260999,-,104400,2227,70200,1206,-,-,11.6,Petrol,True
+12516,7060,Land Rover,Land Rover Range Rover Sport Mild Hybrid,3.0 P400 HST (A),438999,37500,175600,3746,70200,2380,86207,127173,10.9,Petrol-Electric,True
+12518,7089,Honda,Honda Accord,1.5 VTEC Turbo (A),180899,15700,72360,1544,70200,684,39322,47051,15.6,Petrol,True
+12528,7798,Audi,Audi RS 5 Sportback,2.9 TFSI qu Tip (A),434473,-,173789,3707,70200,2260,-,-,10.6,Petrol,True
+12534,7961,Mercedes-Benz,Mercedes-Benz CLA-Class Coupe,CLA180 Progressive (A),173888,15400,69555,1484,47001,586,33877,39428,16.9,Petrol,True
+12534,7106,Mercedes-Benz,Mercedes-Benz CLA-Class Coupe,CLA200 Progressive (A),227888,20700,91155,1945,70200,586,36237,42732,17.5,Petrol,True
+12534,7433,Mercedes-Benz,Mercedes-Benz CLA-Class Coupe,CLA35 AMG 4MATIC (A),287888,26000,115155,2457,70200,1202,44901,54861,,Petrol,True
+12534,7851,Mercedes-Benz,Mercedes-Benz CLA-Class Coupe,CLA45 S AMG 4MATIC+ (A),359888,31700,143955,3071,70200,1202,62758,84964,11.5,Petrol,True
+12535,7111,BMW,BMW 7 Series Plug-in Hybrid,745Le Pure Excellence (A),544888,-,217955,4649,70200,2382,-,-,35.7,Petrol-Electric,True
+12538,7116,Mercedes-Benz,Mercedes-Benz GLE-Class Mild Hybrid,GLE450 4MATIC (A),428888,37400,171555,3660,70200,2384,75993,108787,11,Petrol-Electric,True
+12538,7850,Mercedes-Benz,Mercedes-Benz GLE-Class Mild Hybrid,GLE53 AMG 4MATIC+ (A),469888,-,187955,4009,70200,2384,-,-,10.6,Petrol-Electric,True
+12545,7675,Audi,Audi A4 Sedan Mild Hybrid,2.0 TFSI S tronic (A),210013,19100,84005,1792,70200,1194,33322,38651,16.4,Petrol-Electric,True
+12546,7496,Audi,Audi A1 Sportback,1.0 TFSI S tronic S Line (A),150584,13800,60234,1285,47001,390,23957,25540,18.5,Petrol,True
+12549,7145,Lotus,Lotus Elise,Sport 220 (M),239000,-,-,-,70200,976,-,-,13.3,Petrol,False
+12549,8154,Lotus,Lotus Elise,Sport 240 Final Edition (M),250000,-,-,-,70200,976,-,-,12.8,Petrol,False
+12550,8155,Lotus,Lotus Exige,Sport 390 Final Edition (M),340000,-,-,-,70200,3098,-,-,9.8,Petrol,False
+12550,8156,Lotus,Lotus Exige,Sport 420 Final Edition (M),440000,-,-,-,70200,3098,-,-,9.8,Petrol,False
+12550,7147,Lotus,Lotus Exige,Cup 430 Final Edition (M),490000,-,-,-,70200,3098,-,-,9.8,Petrol,False
+12560,8049,BMW,BMW 1 Series Hatchback,116i Sport (A),155888,13800,62355,1330,47001,684,31079,35511,18.2,Petrol,True
+12560,8050,BMW,BMW 1 Series Hatchback,116i Luxury (A),160888,14200,64355,1373,47001,684,32498,37497,18.2,Petrol,True
+12561,7719,Mercedes-Benz,Mercedes-Benz A-Class Saloon,A180 Progressive (A),169888,15200,67955,1450,47001,586,31643,36300,16.9,Petrol,True
+12561,7191,Mercedes-Benz,Mercedes-Benz A-Class Saloon,A200 Progressive (A),209888,19100,83955,1791,70200,586,33075,38305,18.2,Petrol,True
+12561,7192,Mercedes-Benz,Mercedes-Benz A-Class Saloon,A200 AMG Line (A),212888,19300,85155,1817,70200,586,34089,39725,18.2,Petrol,True
+12561,7193,Mercedes-Benz,Mercedes-Benz A-Class Saloon,A250 AMG Line (A),237888,21400,95155,2030,70200,1202,39939,47915,15.6,Petrol,True
+12561,7508,Mercedes-Benz,Mercedes-Benz A-Class Saloon,A35 AMG 4MATIC (A),278888,25300,111555,2380,70200,1202,42452,51433,,Petrol,True
+12563,7199,Jeep,Jeep Wrangler Rubicon 4-Door,2.0 Turbo (A),285999,26000,114400,2440,70200,1206,43135,52389,11.6,Petrol,True
+12568,7242,Nissan,Nissan Serena e-POWER Hybrid,HIGHWAY STAR (A),158800,14900,63520,1355,70200,860,30656,19918,18.5,Petrol-Electric,True
+12568,7957,Nissan,Nissan Serena e-POWER Hybrid,Touring Edition (A),161800,-,64720,1381,70200,860,-,-,18.5,Petrol-Electric,True
+12581,7268,Nissan,Nissan NV200 Petrol,1.6 Panel Van (M),65800,-,6580,842,38890,-,-,-,14.3,Petrol,True
+12581,7269,Nissan,Nissan NV200 Petrol,1.6 Panel Van (A),66800,-,6680,855,38890,-,-,-,12.8,Petrol,True
+12588,7286,BMW M Series,BMW M Series M850i Gran Coupe,4.4 xDrive (A),653888,-,261555,5580,70200,4566,-,-,9.3,Petrol,True
+12589,7287,BMW,BMW 8 Series Gran Coupe,840i Chrome Line (A),518888,-,207555,4428,70200,2382,-,-,13.3,Petrol,True
+12589,7427,BMW,BMW 8 Series Gran Coupe,840i M Sport (A),524888,-,209955,4479,70200,2382,-,-,13.3,Petrol,True
+12594,7300,Ssangyong,Ssangyong Musso Sports Diesel,2.2 2WD [Euro VI] (M),125888,12600,12589,1611,38890,-,21517,1076,13.2,Diesel (Euro VI),True
+12594,7301,Ssangyong,Ssangyong Musso Sports Diesel,2.2 2WD [Euro VI] (A),131888,13200,13189,1688,38890,-,23315,1166,12,Diesel (Euro VI),True
+12594,7302,Ssangyong,Ssangyong Musso Sports Diesel,2.2 4WD [Euro VI] (M),131888,13200,13189,1688,38890,-,23302,1165,12.7,Diesel (Euro VI),True
+12594,7303,Ssangyong,Ssangyong Musso Sports Diesel,2.2 4WD [Euro VI] (A),137888,13800,13789,1765,38890,-,25100,1255,11.6,Diesel (Euro VI),True
+12595,7306,BMW M Series,BMW M Series M135i,2.0 xDrive (A),265888,23500,106355,2269,70200,1210,50069,62124,13.3,Petrol,True
+12597,7309,Ssangyong,Ssangyong Musso Grand Diesel,2.2 2WD [Euro VI] (M),131888,13200,13189,1688,38890,-,21876,1094,12.3,Diesel (Euro VI),True
+12597,7310,Ssangyong,Ssangyong Musso Grand Diesel,2.2 2WD [Euro VI] (A),137888,13800,13789,1765,38890,-,23667,1183,11.5,Diesel (Euro VI),True
+12597,7311,Ssangyong,Ssangyong Musso Grand Diesel,2.2 4WD [Euro VI] (M),137888,13800,13789,1765,38890,-,23654,1183,12,Diesel (Euro VI),True
+12597,7312,Ssangyong,Ssangyong Musso Grand Diesel,2.2 4WD [Euro VI] (A),143888,14400,14389,1842,38890,-,25445,1272,11.1,Diesel (Euro VI),True
+12598,7321,BMW M Series,BMW M Series M340i,3.0 xDrive (A),364888,32100,145955,3114,70200,2382,64393,87907,13.5,Petrol,True
+12603,7400,Hyundai,Hyundai Venue,1.6 GLS (A),97999,9000,29400,976,47001,742,15110,15110,17.2,Petrol,True
+12603,7401,Hyundai,Hyundai Venue,1.6 GLS 'S' (A),103999,9600,31200,1035,47001,742,16941,16941,17.2,Petrol,True
+12604,8183,Land Rover,Land Rover Defender 90,2.0 SE 6-Seater (A),313999,28000,125600,2679,70200,1208,53346,68023,9.7,Petrol,True
+12606,7336,BMW,BMW 3 Series Plug-in Hybrid,330e Luxury (A),306888,27300,122755,2619,70200,1210,53592,68466,55.5,Petrol-Electric,True
+12608,8160,Mitsubishi,Mitsubishi L200 Triton Diesel,2.2 Double Cab Modern [Euro VI] (A),152988,15300,15299,1958,38890,-,30000,1500,12.8,Diesel (Euro VI),True
+12608,8161,Mitsubishi,Mitsubishi L200 Triton Diesel,2.2 Double Cab Style [Euro VI] (A),157988,15800,15799,2022,38890,-,33000,1650,12.8,Diesel (Euro VI),True
+12609,7343,Ssangyong,Ssangyong Tivoli,1.5 Deluxe (A),127888,11800,51155,1091,70200,682,20191,20267,14.7,Petrol,True
+12610,7351,Ssangyong,Ssangyong Tivoli Diesel,1.6 Standard (A),119888,11000,35966,1193,70200,1282,19736,19736,19.2,Diesel (Euro VI),True
+12612,7659,Land Rover,Land Rover Range Rover Mild Hybrid,3.0 P400 SWB Vogue (A),485999,-,194400,4147,70200,2380,-,-,10.9,Petrol-Electric,True
+12618,7407,Toyota,Toyota Corolla Altis,1.6 Standard (A),109888,10000,32966,1094,47001,742,19430,19430,15.6,Petrol,True
+12618,7408,Toyota,Toyota Corolla Altis,1.6 Elegance (A),116888,10600,46755,997,47001,742,21556,22178,15.6,Petrol,True
+12619,7415,BMW,BMW X6,xDrive40i M Sport,414888,34800,165955,3540,70200,2382,89371,132868,11.1,Petrol,True
+12620,8044,Audi,Audi e-tron Electric,50 quattro Advanced 71 kWh (A),337960,29700,135184,2884,70200,2586,80318,81572,23.6,Electric,True
+12620,7418,Audi,Audi e-tron Electric,55 quattro 95 kWh (A),377901,33500,151160,3225,70200,3132,82838,86108,25.1,Electric,True
+12622,7378,BMW M Series,BMW M Series M235i Gran Coupe,2.0 xDrive (A),289888,25800,115955,2474,70200,1210,51431,64576,13.2,Petrol,True
+12624,7547,BMW M Series,BMW M Series X6 M,4.4 xDrive Competition (A),662888,-,265155,5656,70200,4566,-,-,8,Petrol,True
+12625,7411,BMW M Series,BMW M Series M8 Coupe,4.4 xDrive Competition (A),773888,-,309555,6603,70200,4566,-,-,9.6,Petrol,True
+12626,7731,Kia,Kia Seltos,1.4 EX (A),128999,12000,38700,1284,70200,598,17412,17412,15.9,Petrol,True
+12626,7732,Kia,Kia Seltos,1.4 SX (A),138999,12800,55600,1186,70200,598,21060,21484,15.9,Petrol,True
+12627,7379,BMW,BMW X3 Plug-in Hybrid,xDrive30e xLine (A),312888,-,125155,2670,70200,1210,-,-,38.5,Petrol-Electric,True
+12631,7403,Mazda,Mazda CX-30,2.0 Classic (A),134888,12300,53955,1151,70200,1210,22436,23410,15.2,Petrol,True
+12631,7404,Mazda,Mazda CX-30,2.0 Elegance (A),142888,13300,42866,1422,70200,1210,19770,19770,15.2,Petrol,True
+12631,7405,Mazda,Mazda CX-30,2.0 Luxury (A),147888,13500,59155,1262,70200,1210,23594,25032,15.2,Petrol,True
+12632,7785,Jeep,Jeep Gladiator Overland Petrol,3.6 V6 (A),205999,20600,20600,2637,38890,-,41000,2050,9.3,Petrol,True
+12633,8438,MINI,MINI Electric,Collection 32.64 kWh (A),182888,-,73155,1561,70200,1470,-,-,15.2,Electric,True
+12633,8269,MINI,MINI Electric,32.64 kWh (A),183888,-,73555,1569,70200,1470,-,-,15.2,Electric,True
+12634,7980,Audi,Audi e-tron Sportback Electric,50 quattro Advanced 71 kWh (A),338461,31000,135384,2888,70200,2586,71704,56067,23.2,Electric,True
+12636,7503,Audi,Audi Q3 Sportback,1.4 TFSI S tronic [17" Rim] (A),198089,18100,79236,1690,70200,622,29719,33607,14.2,Petrol,True
+12636,7664,Audi,Audi Q3 Sportback,2.0 TFSI qu S tronic (A),235263,-,94105,2007,70200,1194,-,-,12.7,Petrol,True
+12643,8193,Peugeot,Peugeot 2008,1.2 PureTech EAT8 Allure Premium (A),116888,10500,46755,997,47001,508,22598,23637,19.6,Petrol,True
+12643,8194,Peugeot,Peugeot 2008,1.2 PureTech EAT8 GT (A),129888,11600,51955,1108,47001,508,26100,28540,19.6,Petrol,True
+12644,7461,Ssangyong,Ssangyong Korando,1.5 (A),143888,13200,57555,1228,70200,682,22481,23473,14.3,Petrol,True
+12645,7905,Volkswagen,Volkswagen T-Cross,1.0 TSI DSG R-Line (A),118900,10700,47560,1015,47001,390,22396,23354,18.5,Petrol,True
+12646,8078,Lexus,Lexus LC 500 Convertible,5.0 V8 (A),587800,-,235120,5016,70200,5464,-,-,7.9,Petrol,True
+12647,7409,Toyota,Toyota Corolla Altis Hybrid,1.8 (A),149888,14100,59955,1279,70200,976,29232,17925,22.7,Petrol-Electric,True
+12649,7465,Land Rover,Land Rover Discovery Sport Mild Hybrid,2.0 SE 7-Seater (A),253999,23100,101600,2167,70200,1208,38731,46223,13,Petrol-Electric,True
+12649,7419,Land Rover,Land Rover Discovery Sport Mild Hybrid,2.0 R Dynamic SE 7-Seater (A),262999,23900,105200,2244,70200,1208,40195,48273,13,Petrol-Electric,True
+12650,7428,MG,MG ZS Electric,44.5kWh (A),135888,13300,54355,1160,70200,1118,32941,5000,14.7,Electric,True
+12651,7429,MG,MG HS,1.5 Turbo (A),131888,12200,39566,1313,70200,678,19699,19699,14.7,Petrol,True
+12653,7829,Mazda,Mazda CX-8,2.5 Elegance 7-Seater (A),176888,15900,70755,1509,70200,1784,31035,35449,12.3,Petrol,True
+12653,7830,Mazda,Mazda CX-8,2.5 Luxury 7-Seater (A),186888,16900,74755,1595,70200,1784,31154,35616,12.3,Petrol,True
+12653,7831,Mazda,Mazda CX-8,2.5 Luxury 6-Seater (A),189888,17200,75955,1620,70200,1784,31449,36029,12.3,Petrol,True
+12659,7452,MINI,MINI One Clubman,1.5 (A),153888,13500,61555,1313,47001,684,32003,36804,18.2,Petrol,True
+12660,8036,MINI,MINI John Cooper Works Countryman,2.0 (A),268888,-,107555,2294,70200,1210,-,-,14.3,Petrol,True
+12665,7472,BMW,BMW 2 Series Gran Coupe,218i Luxury (A),200888,18000,80355,1714,70200,684,35703,41984,16.9,Petrol,True
+12665,7473,BMW,BMW 2 Series Gran Coupe,218i M Sport (A),203888,18300,81555,1740,70200,684,36101,42541,16.9,Petrol,True
+12667,7477,Audi,Audi A6 Avant Mild Hybrid,2.0 TFSI S tronic Design [190PS] (A),276075,24600,110430,2356,70200,1194,47997,59196,16.1,Petrol-Electric,True
+12672,7504,McLaren,McLaren GT,4.0 V8 (A),859000,-,-,-,70200,3940,-,-,8.4,Petrol,False
+12672,7513,McLaren,McLaren GT,4.0 V8 Luxe (A),934000,-,-,-,70200,3940,-,-,8.4,Petrol,False
+12672,7512,McLaren,McLaren GT,4.0 V8 Pioneer (A),934000,-,-,-,70200,3940,-,-,8.4,Petrol,False
+12674,7506,McLaren,McLaren 600LT Coupe,3.8 V8 (A),880000,-,-,-,70200,3634,191605,316889,8.4,Petrol,False
+12675,7511,Ferrari,Ferrari F8 Spider,3.9 V8 (A),1098000,-,-,-,70200,3796,305000,521000,7.8,Petrol,False
+12677,7514,Ferrari,Ferrari SF90 Stradale Plug-in Hybrid,4.0 V8 (A),1818000,-,-,-,70200,3934,510000,890000,,Petrol-Electric,False
+12678,7515,Mercedes-Benz,Mercedes-Benz G-Class,G63 AMG (A),739888,61500,295955,6313,70200,3920,154067,249321,7.6,Petrol,True
+12679,7517,Ferrari,Ferrari 812 GTS,6.5 V12 (A),1560000,-,-,-,70200,7852,440000,764000,6,Petrol,False
+12680,7518,Ferrari,Ferrari Roma,3.9 V8 (A),888000,-,-,-,70200,3722,250000,422000,,Petrol,False
+12683,7539,McLaren,McLaren 720S Spider,4.0 V8 (A),1143000,-,-,-,70200,3940,-,-,8.2,Petrol,False
+12684,7540,Mercedes-Benz,Mercedes-Benz GLS-Class Mild Hybrid,GLS450 4MATIC (A),508888,43800,203555,4342,70200,2384,93953,141115,10.9,Petrol-Electric,True
+12685,7548,BMW,BMW X5 Plug-in Hybrid,xDrive45e xLine (A),404888,-,161955,3455,70200,2382,-,-,58.8,Petrol-Electric,True
+12688,7616,Audi,Audi A5 Sportback Mild Hybrid,2.0 TFSI S tronic (A),228062,20600,91225,1946,70200,1194,36747,43446,15.6,Petrol-Electric,True
+12688,7618,Audi,Audi A5 Sportback Mild Hybrid,2.0 TFSI qu S tronic S line (A),312384,-,124954,2666,70200,1194,-,-,14,Petrol-Electric,True
+12691,7555,BMW M Series,BMW M Series M8 Gran Coupe,4.4 xDrive Competition (A),773888,-,309555,6603,70200,4566,-,-,9.3,Petrol,True
+12696,7614,Audi,Audi A5 Coupe Mild Hybrid,2.0 TFSI S tronic (A),232100,20800,92840,1980,70200,1194,40134,48188,16.1,Petrol-Electric,True
+12697,7619,Audi,Audi A5 Cabriolet Mild Hybrid,2.0 TFSI S tronic Advanced (A),291428,25600,116571,2487,70200,1194,54441,69994,14.9,Petrol-Electric,True
+12700,8136,SKODA,SKODA Kamiq,1.5 TSI Ambition (A),139900,-,55960,1194,70200,684,-,-,17.9,Petrol,True
+12700,8137,SKODA,SKODA Kamiq,1.5 TSI Style (A),149900,-,59960,1279,70200,684,-,-,17.9,Petrol,True
+12700,8138,SKODA,SKODA Kamiq,1.5 TSI Monte Carlo (A),155900,-,62360,1330,70200,684,-,-,17.9,Petrol,True
+12701,7680,Honda,Honda City,1.5 SV i-VTEC (A),100799,9200,30240,1003,47001,684,18150,18150,17.9,Petrol,True
+12701,7693,Honda,Honda City,1.5 RS i VTEC (A),103499,9400,31050,1030,47001,684,19022,19022,17.9,Petrol,True
+12701,7706,Honda,Honda City,1.5 SV i-VTEC LX (A),104399,-,-,-,47001,684,-,-,17.9,Petrol,True
+12701,7707,Honda,Honda City,1.5 RS i VTEC LX (A),107099,-,-,-,47001,684,-,-,17.9,Petrol,True
+12703,7584,Rolls-Royce,Rolls-Royce Phantom,6.75 V12 (A),POA,-,-,-,70200,8248,-,-,7.1,Petrol,True
+12703,7585,Rolls-Royce,Rolls-Royce Phantom,6.75 V12 Extended (A),POA,-,-,-,70200,8248,-,-,7.1,Petrol,True
+12708,8011,Aston Martin,Aston Martin DBX,4.0 V8 (A),POA,-,-,-,70200,3920,-,-,7,Petrol,True
+12709,7857,Audi,Audi RS 7 Sportback Mild Hybrid,4.0 TFSI qu Tip (A),601247,-,240499,5130,70200,3942,-,-,,Petrol-Electric,True
+12710,7797,Audi,Audi RS 6 Avant Mild Hybrid,4.0 TFSI qu Tip (A),588247,50900,235299,5019,70200,3942,103517,158331,7.6,Petrol-Electric,True
+12711,8192,Bentley,Bentley Flying Spur,4.0 V8 (A),POA,-,-,-,70200,3942,-,-,7.9,Petrol,True
+12711,7819,Bentley,Bentley Flying Spur,6.0 W12 (A),POA,-,-,-,70200,6998,245383,413689,7.6,Petrol,True
+12714,8166,Porsche,Porsche Taycan Electric,Performance Battery 79 kWh (A),345858,-,-,-,70200,2742,-,-,28,Electric,False
+12714,7631,Porsche,Porsche Taycan Electric,4S Performance Battery 79.2 kWh (A),468258,-,-,-,70200,5088,134177,178519,26.2,Electric,False
+12714,7632,Porsche,Porsche Taycan Electric,Turbo 93.4 kWh (A),603858,-,-,-,70200,6808,-,-,28,Electric,False
+12714,7633,Porsche,Porsche Taycan Electric,Turbo S 93.4 kWh (A),748158,-,-,-,70200,7746,-,-,28.5,Electric,False
+12715,7607,BMW,BMW 5 Series Sedan Mild Hybrid,520i Luxury (A),311888,27700,124755,2661,70200,1210,54710,70478,18.2,Petrol-Electric,True
+12715,7972,BMW,BMW 5 Series Sedan Mild Hybrid,520i M Sport (A),321888,28500,128755,2747,70200,1210,56850,74330,18.2,Petrol-Electric,True
+12715,7858,BMW,BMW 5 Series Sedan Mild Hybrid,530i M Sport (A),328888,28500,131555,2806,70200,1210,63816,86869,17.9,Petrol-Electric,True
+12719,7611,BMW,BMW 6 Series Gran Turismo Mild Hybrid,630i Luxury (A),327888,28400,131155,2798,70200,1210,64837,88707,16.4,Petrol-Electric,True
+12719,7970,BMW,BMW 6 Series Gran Turismo Mild Hybrid,630i M Sport (A),336888,28900,134755,2875,70200,1210,68571,95428,16.4,Petrol-Electric,True
+12720,7624,BMW,BMW 4 Series Coupe,420i M Sport (A),257888,22700,103155,2201,70200,1210,49489,61285,15.6,Petrol,True
+12720,7625,BMW,BMW 4 Series Coupe,430i M Sport Pro (A),321888,28000,128755,2747,70200,1210,62154,83877,15.2,Petrol,True
+12724,7639,Porsche,Porsche 911 Targa,4 PDK 3.0 (A),589988,-,-,-,70200,2362,-,-,,Petrol,False
+12724,7640,Porsche,Porsche 911 Targa,4S PDK 3.0 (A),657788,-,-,-,70200,2362,-,-,,Petrol,False
+12724,7641,Porsche,Porsche 911 Targa,4S PDK 3.0 Heritage Design Edition (A),813188,-,-,-,70200,2362,-,-,,Petrol,False
+12725,7678,Nissan,Nissan Kicks e-POWER Hybrid,Premium (A),115800,11000,46320,988,47001,802,24975,11965,21.7,Petrol-Electric,True
+12725,7679,Nissan,Nissan Kicks e-POWER Hybrid,Premium Plus (A),117800,11200,47120,1005,47001,802,25421,12589,21.7,Petrol-Electric,True
+12725,8348,Nissan,Nissan Kicks e-POWER Hybrid,Premium Adventure Series (A),118800,-,47520,1014,47001,802,-,-,21.7,Petrol-Electric,True
+12725,8349,Nissan,Nissan Kicks e-POWER Hybrid,Premium Plus Adventure Series (A),120800,-,48320,1031,47001,802,-,-,21.7,Petrol-Electric,True
+12726,7645,Ford,Ford Ranger Diesel,2.0 Double Cab Pick-Up Limited [Euro VI] (A),109888,-,10989,1406,38890,-,37000,1850,12.6,Diesel (Euro VI),False
+12728,8323,Hyundai,Hyundai Kona Hybrid,1.6 DCT (A),113999,10700,45600,973,47001,732,26826,14556,23.3,Petrol-Electric,True
+12728,8324,Hyundai,Hyundai Kona Hybrid,1.6 DCT Sunroof (A),121999,11200,48800,1041,47001,732,30021,19029,23.3,Petrol-Electric,True
+12730,7660,Land Rover,Land Rover Range Rover,5.0 V8 S/C LWB SVAutobiography (A),919999,-,368000,7850,70200,5512,-,-,,Petrol,True
+12733,7677,Audi,Audi A4 Avant Mild Hybrid,2.0 TFSI S tronic (A),220519,19900,88208,1882,70200,1194,36110,42554,15.6,Petrol-Electric,True
+12739,7709,BYD,BYD T3 Electric,50.3 kWh (A),98300,-,9830,1258,38890,-,-,-,-,Electric,True
+12746,7987,Mercedes-Benz,Mercedes-Benz GLA-Class,GLA180 Progressive (A),179888,16100,71955,1535,47001,586,33392,38749,15.6,Petrol,True
+12746,7736,Mercedes-Benz,Mercedes-Benz GLA-Class,GLA200 Progressive (A),223888,20300,89555,1910,70200,586,35118,41165,16.4,Petrol,True
+12746,7737,Mercedes-Benz,Mercedes-Benz GLA-Class,GLA200 AMG Line (A),226888,20400,90755,1936,70200,586,37967,45154,16.4,Petrol,True
+12746,7963,Mercedes-Benz,Mercedes-Benz GLA-Class,GLA35 AMG 4MATIC (A),277888,-,111155,2371,70200,1202,-,-,13.2,Petrol,True
+12746,7964,Mercedes-Benz,Mercedes-Benz GLA-Class,GLA45 S AMG 4MATIC+ (A),355888,-,142355,3037,70200,1202,-,-,10.6,Petrol,True
+12748,7745,Audi,Audi S4 Sedan,3.0 TFSI qu Tip (A),356581,-,142632,3043,70200,2380,-,-,11.6,Petrol,True
+12749,7871,Hyundai,Hyundai Avante,1.6 (A),94999,9200,28500,946,47001,742,15137,5000,18.5,Petrol,True
+12749,7792,Hyundai,Hyundai Avante,1.6 'S' (A),98999,9600,29700,986,47001,742,18849,5000,18.5,Petrol,True
+12749,7793,Hyundai,Hyundai Avante,1.6 Elite Sunroof (A),104999,10100,42000,896,47001,742,21619,7267,18.5,Petrol,True
+12750,7760,Land Rover,Land Rover Defender 110,2.0 P300 SE 6-Seater (A),333999,29600,133600,2850,70200,1208,58163,76693,9.7,Petrol,True
+12752,7764,BYD,BYD T9R Electric,217 kWh (A),POA,-,-,-,38890,-,-,-,-,Electric,True
+12758,7779,Isuzu,Isuzu N Series Diesel,NHR87 AUE4AA 10FT [Euro VI] (M),42000,-,4200,538,38890,-,-,-,8.3,Diesel (Euro VI),False
+12758,7780,Isuzu,Isuzu N Series Diesel,NJR88 AUE4A 10FT [Euro VI] (A),54500,-,5450,698,38890,-,-,-,11.8,Diesel (Euro VI),False
+12758,7782,Isuzu,Isuzu N Series Diesel,NPR85 UH5A 15FT [Euro VI] (M),56800,-,5680,727,38890,-,-,-,,Diesel (Euro VI),False
+12758,7816,Isuzu,Isuzu N Series Diesel,NPR85 UH5A 15 FT [Euro VI] (A),60000,-,6000,768,38890,-,-,-,,Diesel (Euro VI),False
+12758,7781,Isuzu,Isuzu N Series Diesel,NPR75 UH5A 15FT [Euro VI] (M),61800,-,6180,791,38890,-,-,-,,Diesel (Euro VI),False
+12758,7817,Isuzu,Isuzu N Series Diesel,NPR75 UH5A 15FT [Euro VI] (A),63000,-,6300,806,38890,-,-,-,,Diesel (Euro VI),False
+12759,7783,Isuzu,Isuzu F Series Diesel,FVR90 SUQD-C [Euro VI] (M),90500,-,9050,1158,38890,-,-,-,,Diesel (Euro VI),False
+12763,7803,Audi,Audi Q7 Mild Hybrid,3.0 TFSI qu Tip 7-Seater (A),418922,-,167569,3575,70200,2380,-,-,10.6,Petrol-Electric,True
+12768,7818,Bentley,Bentley Bentayga,4.0 V8 (A),POA,-,-,-,70200,3942,207396,345313,8.8,Petrol,True
+12769,7823,Kia,Kia Sorento Diesel,2.2 SX 7-Seater (A),181999,16300,72800,1553,70200,2152,33326,38656,17.5,Diesel (Euro VI),True
+12769,7824,Kia,Kia Sorento Diesel,2.2 SX Tech Pack 7-Seater (A),196999,17600,78800,1681,70200,2152,35946,42324,17.5,Diesel (Euro VI),True
+12769,7825,Kia,Kia Sorento Diesel,2.2 GT Tech Pack 7-Seater (A),216999,19500,86800,1852,70200,2152,37567,44594,16.7,Diesel (Euro VI),True
+12771,7826,BYD,BYD M3e Electric,50.3 kWh (A),112888,-,-,-,47001,826,-,-,19.4,Electric,True
+12772,7989,Mercedes-Benz,Mercedes-Benz GLB-Class,GLB180 Progressive 7-Seater (A),189888,-,75955,1620,47001,586,-,-,16.9,Petrol,True
+12772,7832,Mercedes-Benz,Mercedes-Benz GLB-Class,GLB200 Progressive 7-Seater (A),227888,-,91155,1945,70200,586,-,-,15.6,Petrol,True
+12772,7990,Mercedes-Benz,Mercedes-Benz GLB-Class,GLB250 AMG Line 7-Seater (A),264888,-,105955,2260,70200,1202,-,-,13.5,Petrol,True
+12772,7833,Mercedes-Benz,Mercedes-Benz GLB-Class,GLB35 AMG 4MATIC 7-Seater (A),284888,25700,113955,2431,70200,1202,45097,55136,12.7,Petrol,True
+12776,7848,Audi,Audi RS Q3 Sportback,2.5 TFSI qu S tronic (A),338802,30200,135521,2891,70200,1776,56384,73491,11.1,Petrol,True
+12777,7849,Ford,Ford Ranger Raptor Diesel,2.0 Double Cab Pick-Up Limited [Euro VI] (A),153888,-,15389,1970,38890,-,53000,2650,11.2,Diesel (Euro VI),False
+12778,7852,Mercedes-Benz,Mercedes-Benz GLC-Class Plug-in Hybrid,GLC300e 4MATIC (A),308888,-,123555,2636,70200,1202,-,-,38.5,Petrol-Electric,True
+12780,7855,Audi,Audi RS Q3,2.5 TFSI qu S tronic (A),330596,-,132238,2821,70200,1776,-,-,11.1,Petrol,True
+12781,7856,Opel,Opel Combo Diesel,1.5 Turbo [LWB] [Euro VI] (A),88500,8900,8850,1133,38890,-,24282,1214,21.3,Diesel (Euro VI),True
+12782,7968,Audi,Audi RS Q8 Mild Hybrid,4.0 TFSI qu Tip (A),605004,-,242002,5162,70200,3942,-,-,8.3,Petrol-Electric,True
+12784,7868,Rolls-Royce,Rolls-Royce Ghost,6.75 V12 (A),POA,-,-,-,70200,8248,418808,725854,,Petrol,True
+12784,7869,Rolls-Royce,Rolls-Royce Ghost,6.75 V12 Extended (A),POA,-,-,-,70200,8248,-,-,,Petrol,True
+12787,7896,Mercedes-Benz,Mercedes-Benz GLE-Class Coupe Mild Hybrid,GLE450 4MATIC (A),456888,-,182755,3899,70200,2384,-,-,10.9,Petrol-Electric,True
+12787,7898,Mercedes-Benz,Mercedes-Benz GLE-Class Coupe Mild Hybrid,GLE53 AMG 4MATIC+ (A),487888,-,195155,4163,70200,2384,-,-,10.8,Petrol-Electric,True
+12791,7911,CUPRA,CUPRA Ateca,2.0 TSI DSG (A),234999,21100,94000,2005,70200,1194,40013,48018,12.5,Petrol,True
+12797,8145,BMW ALPINA,BMW ALPINA XD3 Diesel,3.0 (A),320800,-,-,-,70200,3476,-,-,15.6,Diesel (Euro VI),False
+12798,7936,Mercedes-Benz,Mercedes-Benz E-Class Saloon,E200 Avantgarde (A),306888,27200,122755,2619,70200,1202,54869,70764,12.7,Petrol,True
+12798,7937,Mercedes-Benz,Mercedes-Benz E-Class Saloon,E200 Exclusive (A),324888,28900,129955,2772,70200,1202,55564,72015,12.7,Petrol,True
+12798,7938,Mercedes-Benz,Mercedes-Benz E-Class Saloon,E200 AMG Line (A),334888,-,133955,2858,70200,1202,-,-,12.7,Petrol,True
+12798,7991,Mercedes-Benz,Mercedes-Benz E-Class Saloon,E300 Avantgarde (A),342888,30100,137155,2926,70200,1202,62494,84489,12.7,Petrol,True
+12798,7992,Mercedes-Benz,Mercedes-Benz E-Class Saloon,E300 Exclusive (A),352888,-,141155,3011,70200,1202,-,-,12.7,Petrol,True
+12802,7946,Suzuki,Suzuki Swift Mild Hybrid,1.2 Standard (A),89900,-,-,-,47001,506,-,-,24.2,Petrol-Electric,True
+12802,7956,Suzuki,Suzuki Swift Mild Hybrid,1.2 Standard Two-Tone (A),90900,-,-,-,47001,506,-,-,24.2,Petrol-Electric,True
+12804,7958,Volvo,Volvo XC90 Recharge Plug-in Hybrid,T8 Inscription 7-Seater (A),404000,-,161600,3447,70200,1176,-,-,43.5,Petrol-Electric,True
+12805,7959,Lexus,Lexus IS 300h Hybrid,2.5 Executive (A),221800,20000,88720,1893,70200,1792,47413,43378,18.5,Petrol-Electric,True
+12805,8104,Lexus,Lexus IS 300h Hybrid,2.5 Luxury (A),231800,20600,92720,1978,70200,1792,52315,51167,18.5,Petrol-Electric,True
+12805,8311,Lexus,Lexus IS 300h Hybrid,2.5 F Sport (A),249800,-,99920,2132,70200,1792,-,-,18.5,Petrol-Electric,True
+12806,8236,CUPRA,CUPRA Formentor,1.5 TSI DSG [150] (A),167999,-,67200,1434,70200,684,-,-,17.9,Petrol,True
+12806,8237,CUPRA,CUPRA Formentor,2.0 TSI DSG [190] (A),222999,-,89200,1903,70200,1194,-,-,14.2,Petrol,True
+12806,8239,CUPRA,CUPRA Formentor,2.0 TSI DSG VZ [310] (A),258999,-,103600,2210,70200,1194,-,-,12.9,Petrol,True
+12807,8095,Nissan,Nissan Note e-POWER Hybrid,Lite (A),103800,-,-,-,47001,714,-,-,21.7,Petrol-Electric,True
+12807,8096,Nissan,Nissan Note e-POWER Hybrid,Premium (A),106800,10300,42720,911,47001,714,21695,7373,21.7,Petrol-Electric,True
+12810,7996,Toyota,Toyota Yaris Cross Hybrid,1.5 Active (A),61888,-,-,-,47001,678,24125,10775,26.3,Petrol-Electric,False
+12810,7997,Toyota,Toyota Yaris Cross Hybrid,1.5 Excite (A),66888,-,-,-,47001,678,-,-,26.3,Petrol-Electric,False
+12811,7978,Honda,Honda Jazz,1.5 CVT Home (A),POA,-,-,-,47001,684,17721,17721,17.5,Petrol,False
+12811,7977,Honda,Honda Jazz,1.5 CVT Base (A),99899,9100,29970,994,47001,684,16945,16945,17.5,Petrol,True
+12812,8132,Hyundai,Hyundai Palisade,3.5 V6 Sunroof 8-Seater (A),223999,20100,89600,1911,70200,3120,38910,46474,9.5,Petrol,True
+12813,8266,Peugeot,Peugeot 508 Fastback,1.6 EAT8 GT (A),163888,14500,65555,1398,70200,742,33088,38323,19.2,Petrol,True
+12814,8013,Peugeot,Peugeot 3008,1.2 PureTech EAT8 Active Premium (A),125888,11300,50355,1074,47001,508,24206,25888,19.2,Petrol,True
+12814,8014,Peugeot,Peugeot 3008,1.2 PureTech EAT8 Allure Premium (A),142888,12600,57155,1219,47001,508,30023,34032,19.2,Petrol,True
+12815,8058,Peugeot,Peugeot 5008,1.2 PureTech EAT8 Active Premium 7-Seater (A),142888,12700,57155,1219,47001,508,28334,31668,19.2,Petrol,True
+12815,8059,Peugeot,Peugeot 5008,1.2 PureTech EAT8 Allure Premium 7-Seater (A),161888,14200,64755,1381,47001,508,34655,40517,19.2,Petrol,True
+12816,7979,Honda,Honda Jazz Hybrid,1.5 ECVT Luxe e-HEV (A),106199,10100,42480,906,47001,684,23952,10533,26.3,Petrol-Electric,True
+12817,8053,BYD,BYD e6 Electric,71.7 kWh (A),119888,11700,47955,1023,47001,826,24000,5000,17.1,Electric,True
+12818,8074,Renault,Renault Captur,1.3T TCe (A),107999,-,43200,922,47001,586,-,-,16.4,Petrol,True
+12818,8073,Renault,Renault Captur,1.3T TCe Privilege (A),114999,-,46000,981,47001,586,-,-,16.4,Petrol,True
+12822,8185,Lexus,Lexus UX 300e Electric,54.3 kWh (A),257800,23500,103120,2200,70200,1646,66068,45922,15,Electric,True
+12824,7994,Mercedes-Benz,Mercedes-Benz G-Class Diesel,G350d (A),513888,-,205555,4385,70200,3368,-,-,10.2,Diesel (Euro VI),True
+12827,8291,Audi,Audi Q5 Mild Hybrid,2.0 TFSI qu S tronic (A),262204,23800,104882,2237,70200,1194,40624,48874,12.5,Petrol-Electric,True
+12827,8012,Audi,Audi Q5 Mild Hybrid,2.0 TFSI qu S tronic S Line (A),276127,24800,110451,2356,70200,1194,45906,56268,12.5,Petrol-Electric,True
+12831,8046,BMW M Series,BMW M Series M4 Coupe,3.0 Competition Launch Edition (A),POA,-,-,-,70200,2376,-,-,9.8,Petrol,True
+12831,8045,BMW M Series,BMW M Series M4 Coupe,3.0 Competition (A),488888,40500,195555,4172,70200,2376,108668,167602,9.8,Petrol,True
+12832,8048,BMW M Series,BMW M Series M3 Sedan,3.0 Competition Launch Edition (A),POA,-,-,-,70200,2376,-,-,9.9,Petrol,True
+12832,8047,BMW M Series,BMW M Series M3 Sedan,3.0 Competition (A),483888,40600,193555,4129,70200,2376,101591,154864,9.9,Petrol,True
+12835,8334,BMW,BMW iX3 Electric,Impressive 74 kWh (A),264888,25000,105955,2260,70200,2350,57489,30480,19.4,Electric,True
+12837,8027,Toyota,Toyota Harrier,2.0 Elegance (A),182888,16200,73155,1561,70200,1196,35925,42295,15.3,Petrol,True
+12838,8028,Toyota,Toyota Harrier Hybrid,2.5 Premium (A),179888,16300,71955,1535,70200,1784,40927,34298,21.2,Petrol-Electric,True
+12838,8026,Toyota,Toyota Harrier Hybrid,2.5 Luxury (A),196888,17700,78755,1680,70200,1784,45328,40459,21.2,Petrol-Electric,True
+12839,8032,Mercedes-Benz,Mercedes-Benz E-Class Cabriolet,E200 (A),363888,-,145555,3105,70200,1202,-,-,12.5,Petrol,True
+12840,8033,Mercedes-Benz,Mercedes-Benz E-Class Coupe,E200 (A),346888,-,138755,2960,70200,1202,-,-,12.7,Petrol,True
+12841,8034,Mercedes-Benz,Mercedes-Benz E-Class Saloon Mild Hybrid,E53 AMG 4MATIC+ (A),464888,-,185955,3967,70200,2384,-,-,11.1,Petrol-Electric,True
+12842,8449,Volvo,Volvo XC40 Recharge Plug-in Hybrid,T5 R-Design (A),230000,-,92000,1963,70200,670,-,-,41.7,Petrol-Electric,True
+12847,8066,Tesla,Tesla Model 3 Electric,Standard Range Plus RWD (A),113245,-,-,-,70200,2726,58310,31958,14.4,Electric,False
+12847,8062,Tesla,Tesla Model 3 Electric,Performance AWD (A),155283,-,-,-,70200,4884,73263,58873,16.5,Electric,False
+12853,8164,Mercedes-Benz,Mercedes-Benz S-Class Mild Hybrid,S450L 4MATIC (A),541888,-,216755,4624,70200,2384,-,-,11.8,Petrol-Electric,True
+12854,8421,Audi,Audi e-tron GT Electric,quattro 93 kWh (A),489000,-,195600,4173,70200,4462,-,-,19.6,Electric,True
+12855,8292,Audi,Audi RS e-tron GT Electric,quattro 93 kWh (A),620000,-,248000,5290,70200,5870,-,-,19.3,Electric,True
+12862,8103,Maxus,Maxus e Deliver 3 Electric,[52.5 kWh] (A),111988,-,11199,1433,38890,-,-,-,23.5,Electric,True
+12864,8107,Honda,Honda Odyssey,2.4 EX 8-Seater (A),188099,-,75240,1605,70200,1630,-,-,12.3,Petrol,True
+12864,8108,Honda,Honda Odyssey,2.4 EXV 7-Seater (A),198899,-,79560,1697,70200,1630,-,-,12.3,Petrol,True
+12865,8112,Perodua,Perodua Aruz,1.5 X 7-Seater (A),97999,-,29400,976,47001,682,-,-,15.6,Petrol,True
+12866,8114,Maserati,Maserati Ghibli Mild Hybrid,2.0 (A),308800,-,-,-,70200,1206,65808,90454,14.3,Petrol-Electric,False
+12877,8167,Morgan,Morgan Plus Six,3.0 Bespoke (A),430888,-,-,-,70200,2382,-,-,12.2,Petrol,False
+12877,8168,Morgan,Morgan Plus Six,3.0 Touring (A),460888,-,-,-,70200,2382,-,-,12.2,Petrol,False
+12878,8170,Morgan,Morgan Plus Four,2.0 (M),320888,-,-,-,70200,1210,-,-,13.7,Petrol,False
+12878,8171,Morgan,Morgan Plus Four,2.0 (A),330888,-,-,-,70200,1210,-,-,14.3,Petrol,False
+12880,8177,Nissan,Nissan NV350 Petrol,2.0 Panel Van (M),67800,-,6780,868,38890,-,-,-,9.6,Petrol,True
+12880,8178,Nissan,Nissan NV350 Petrol,2.0 Panel Van (A),68800,-,6880,881,38890,-,-,-,10.3,Petrol,True
+12880,8176,Nissan,Nissan NV350 Petrol,2.0 Microbus (A),78800,-,7880,1009,38890,-,-,-,10.3,Petrol,True
+12881,8423,Opel,Opel Vivaro-e Electric,75 kWh (A),109500,-,10950,1402,38890,-,-,-,23.3,Electric,True
+12886,8274,Kia,Kia Stonic Mild Hybrid,1.0T EX (A),92999,9000,27900,926,47001,390,18943,5000,21.3,Petrol-Electric,True
+12886,8275,Kia,Kia Stonic Mild Hybrid,1.0T SX (A),96999,9400,38800,828,47001,390,20300,5420,21.3,Petrol-Electric,True
+12888,8195,Suzuki,Suzuki Swift Sport Mild Hybrid,1.4 Turbo Standard (M),109900,10700,32970,1094,47001,610,19204,5000,21.2,Petrol-Electric,True
+12888,8207,Suzuki,Suzuki Swift Sport Mild Hybrid,1.4 Turbo Standard Two-Tone (M),110900,-,33270,1104,47001,610,-,-,21.2,Petrol-Electric,True
+12889,8198,Kia,Kia Carnival Diesel,2.2 SX Tech Pack 8-Seater (A),216999,-,86800,1852,70200,2152,-,-,14.5,Diesel (Euro VI),True
+12889,8197,Kia,Kia Carnival Diesel,2.2 SX Tech Pack 7-Seater (A),222999,19900,89200,1903,70200,2152,39766,47672,14.5,Diesel (Euro VI),True
+12893,8230,Volkswagen,Volkswagen Golf Mild Hybrid,1.5 eTSI DSG Life (A),143400,14000,57360,1224,70200,684,21742,7439,20.8,Petrol-Electric,True
+12893,8231,Volkswagen,Volkswagen Golf Mild Hybrid,1.5 eTSI DSG Life Plus (A),150400,14500,60160,1283,70200,684,24234,10928,20.8,Petrol-Electric,True
+12893,8232,Volkswagen,Volkswagen Golf Mild Hybrid,1.5 eTSI DSG R-Line (A),160400,-,-,-,70200,684,-,-,20.8,Petrol-Electric,True
+12894,8211,Jaguar,Jaguar E-PACE Mild Hybrid,1.5 SE (A),203999,-,81600,1741,70200,684,-,-,14.9,Petrol-Electric,True
+12895,8212,Audi,Audi A3 Sedan Mild Hybrid,1.5 TFSI S tronic (A),169415,16100,67766,1446,70200,684,27773,15882,,Petrol-Electric,True
+12895,8309,Audi,Audi A3 Sedan Mild Hybrid,1.5 TFSI S tronic [Sport Seats] (A),169513,-,67805,1446,70200,684,-,-,,Petrol-Electric,True
+12897,8214,Audi,Audi A3 Sportback Mild Hybrid,1.5 TFSI S tronic (A),167635,-,67054,1430,70200,684,27291,-,,Petrol-Electric,True
+12897,8310,Audi,Audi A3 Sportback Mild Hybrid,1.5 TFSI S tronic [Sport Seats] (A),167733,-,67093,1431,70200,684,-,-,,Petrol-Electric,True
+12899,8224,BMW,BMW 4 Series Convertible,420i Convertible M Sport (A),276888,24100,110755,2363,70200,1210,55977,72759,16.4,Petrol,True
+12899,8225,BMW,BMW 4 Series Convertible,430i Convertible M Sport Pro (A),330888,-,132355,2823,70200,1210,-,-,15.6,Petrol,True
+12900,8226,Ferrari,Ferrari SF90 Spider Plug-in Hybrid,4.0 V8 (A),POA,-,-,-,70200,3934,-,-,16.4,Petrol-Electric,True
+12901,8229,Volkswagen,Volkswagen Golf GTI,2.0 TSI DSG (A),224400,20100,89760,1915,70200,1194,38469,45857,15.4,Petrol,True
+12903,8238,CUPRA,CUPRA Leon,2.0 TSI DSG (A),217999,-,87200,1860,70200,1194,-,-,14.9,Petrol,True
+12904,8240,CUPRA,CUPRA Leon Sportstourer,2.0 TSI DSG (A),232999,-,93200,1988,70200,1194,-,-,12.9,Petrol,True
+12914,8263,SEAT,SEAT Leon Mild Hybrid,1.5 TSI DSG FR (A),126999,-,50800,1084,70200,684,-,-,20,Petrol-Electric,True
+12915,8264,SEAT,SEAT Leon Sportstourer Mild Hybrid,1.5 TSI DSG FR (A),137999,-,55200,1178,70200,684,-,-,20,Petrol-Electric,True
+12916,8286,SKODA,SKODA Octavia Mild Hybrid,1.5 TSI e-TEC Ambition (A),129900,-,51960,1108,70200,684,-,-,18.9,Petrol-Electric,True
+12916,8285,SKODA,SKODA Octavia Mild Hybrid,1.5 TSI e-TEC Style (A),141900,-,56760,1211,70200,684,-,-,18.9,Petrol-Electric,True
+12917,8283,SKODA,SKODA Octavia Combi Mild Hybrid,1.5 TSI e-TEC Style (A),POA,-,-,-,70200,684,-,-,20.8,Petrol-Electric,True
+12918,8314,Hyundai,Hyundai Tucson,1.6 DCT Turbo Sunroof (A),153999,14000,61600,1314,70200,742,25043,27060,14.9,Petrol,True
+12918,8325,Hyundai,Hyundai Tucson,1.6 DCT Turbo 'S' Sunroof (A),158999,14400,63600,1357,70200,742,27443,30420,14.9,Petrol,True
+12919,8294,Mercedes-Benz,Mercedes-Benz EQC Electric,EQC400 4MATIC Electric Art (A),318888,-,127555,2721,70200,3680,-,-,21.5,Electric,True
+12919,8295,Mercedes-Benz,Mercedes-Benz EQC Electric,EQC400 4MATIC AMG Line (A),335888,-,134355,2866,70200,3680,-,-,21.5,Electric,True
+12924,8428,Mercedes-Benz,Mercedes-Benz EQA Electric,EQA250 AMG Line 66.5 kWh (A),250888,-,100355,2141,70200,1530,-,-,16.2,Electric,True
+12930,8318,Audi,Audi Q5 Sportback Mild Hybrid,2.0 TFSI qu S tronic Advanced (A),282167,25300,112867,2408,70200,1194,46752,57453,12.5,Petrol-Electric,True
+12930,8319,Audi,Audi Q5 Sportback Mild Hybrid,2.0 TFSI qu S tronic S line (A),295323,26700,118129,2520,70200,1194,45914,56280,12.5,Petrol-Electric,True
+12935,8326,Toyota,Toyota Camry Hybrid,2.5 Standard (A),145888,13700,58355,1245,70200,1784,29509,18313,21.2,Petrol-Electric,True
+12935,8327,Toyota,Toyota Camry Hybrid,2.5 Elegance (A),161888,14900,64755,1381,70200,1784,34510,25314,21.2,Petrol-Electric,True
+12946,8362,Kia,Kia Cerato,1.6 L (A),95999,-,-,-,47001,738,-,-,15.2,Petrol,True
+12946,8363,Kia,Kia Cerato,1.6 EX (A),99999,-,-,-,47001,738,-,-,15.2,Petrol,True
+12946,8364,Kia,Kia Cerato,1.6 GT Line (A),106999,-,-,-,47001,738,-,-,15.2,Petrol,True
+12947,8370,Honda,Honda Civic,1.5 VTEC Turbo (A),125099,-,-,-,47001,684,-,-,15.6,Petrol,True
+12955,8419,Hyundai,Hyundai Santa Fe Hybrid,1.6 Turbo 7-Seater (A),177999,-,71200,1519,70200,742,-,-,18.2,Petrol-Electric,True
+12955,8420,Hyundai,Hyundai Santa Fe Hybrid,1.6 Turbo 7-Seater Sunroof (A),187999,-,75200,1604,70200,742,-,-,18.2,Petrol-Electric,True
+12956,8381,Volvo,Volvo V60 Cross Country Mild Hybrid,B5 (A),220000,-,88000,1877,70200,1176,-,-,14.9,Petrol-Electric,True
+12957,8382,Volvo,Volvo S90 Mild Hybrid,B5 Inscription (A),220000,-,88000,1877,70200,1176,-,-,15.4,Petrol-Electric,True
+12959,8384,Audi,Audi SQ5,3.0 TFSI qu Tip (A),356986,31600,142794,3046,70200,2380,61000,81800,10.9,Petrol,True
+12962,8389,Volvo,Volvo XC60 Mild Hybrid,B5 R-Design (A),243000,-,97200,2073,70200,1176,-,-,14.5,Petrol-Electric,True
+12962,8390,Volvo,Volvo XC60 Mild Hybrid,B6 R-Design (A),278000,-,111200,2372,70200,1176,-,-,13.2,Petrol-Electric,True
+12963,8413,Volvo,Volvo V90 Cross Country Mild Hybrid,B5 (A),285000,-,114000,2432,70200,1176,-,-,14.3,Petrol-Electric,True
+12964,8391,Jeep,Jeep Gladiator Rubicon Petrol,3.6 V6 (A),225999,22600,22600,2893,38890,-,45000,2250,8.4,Petrol,True
+12966,8392,Porsche,Porsche Taycan Cross Turismo Electric,4 93.4 kWh (A),394558,-,-,-,70200,4462,-,-,-,Electric,False
+12966,8393,Porsche,Porsche Taycan Cross Turismo Electric,4S 93.4 kWh (A),494658,-,-,-,70200,5556,-,-,28.1,Electric,False
+12971,8400,Mercedes-Benz,Mercedes-Benz E-Class Coupe Mild Hybrid,E53 AMG 4MATIC+ (A),476888,-,190755,4069,70200,2384,-,-,11.4,Petrol-Electric,True
+12976,8407,Audi,Audi S3 Sedan,2.0 TFSI qu S tronic (A),260400,-,104160,2222,70200,1194,-,-,,Petrol,True
+12979,8410,MG,MG 5 Electric,Excite SW 50.3 kWh (A),129888,-,-,-,70200,1294,-,-,18.5,Electric,True
+12979,8411,MG,MG 5 Electric,Exclusive SW 61.1 kWh (A),138888,-,-,-,70200,1236,-,-,17.5,Electric,True
+12980,8412,Audi,Audi S3 Sportback,2.0 TFSI qu S tronic (A),258400,-,103360,2205,70200,1194,-,-,,Petrol,True
+12986,8422,Hyundai,Hyundai Tucson Hybrid,1.6 Turbo Sunroof (A),166999,-,66800,1425,70200,742,-,-,20.8,Petrol-Electric,True
+12991,8435,Land Rover,Land Rover Defender 90 Mild Hybrid,3.0 XS Edition 7-Seater (A),367999,-,147200,3140,70200,2380,-,-,10.1,Petrol-Electric,True
+12992,8436,Land Rover,Land Rover Range Rover Sport Mild Hybrid,3.0 HSE (A),405999,-,162400,3464,70200,2380,-,-,10.9,Petrol-Electric,True

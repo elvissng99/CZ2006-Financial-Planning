@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <!-- ======= Reset password Confirm Section ======= -->
+
+  <section class="vh-100 bg-image">
+    <div class="container">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+          <div class="card bg-dark text-white" style="border-radius: 15px;">
+            <div class="card-body p-5">
+              <h2 class="text-center mb-5">Are you sure you want to delete the trip?</h2>
+
+              <form method="POST" class="form-signin">{% csrf_token %}
+                <div class="d-flex justify-content-center">
+                  {{ form }}
+                  <div class="btn-toolbar">
+                    <a class="btn btn-lg btn-info" href="" role="button">Cancel</a>
+                    <button type="submit" class="btn btn-lg btn-danger">Confirm</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Reset Password Confirm Section -->
+
+{% endblock %}

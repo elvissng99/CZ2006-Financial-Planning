@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <!-- ======= Register Section ======= -->
+
+    <section class="bg-image">
+        <div class="mask d-flex align-items-center h-100 gradient-custom-3">
+            <div class="container h-100">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+                <div class="card bg-dark text-white" style="border-radius: 15px;">
+                    <div class="card-body p-5">
+                    <h2 class="text-uppercase text-center mb-5">Create an account</h2>
+
+
+                    <form method="post" class="form-group" novalidate="novalidate" onsubmit="return validate(this)">{% csrf_token %}
+
+                        <div class="form-outline mb-5">
+                            <input type="text" name="username" id="username" class="form-control form-control-lg" placeholder="Username" required/>
+                        </div>
+
+                        <div class="form-outline mb-5">
+                            <input type="email" name="email" id="email" class="form-control form-control-lg" placeholder="Email address" required/>
+                        </div>
+
+                        <div class="form-outline mb-5">
+                            <input type="password" name="password1" id="password1" class="form-control form-control-lg" placeholder="Password" required/>
+                        </div>
+
+                        <div class="form-outline mb-5">
+                            <input type="password" name="password2" id="password2" class="form-control form-control-lg" placeholder="Confirm Password" required/>
+                        </div>
+
+                        {% for field in registration_form %}
+                            {% for error in field.errors %}
+                            <p style="color: red;">{{error}}</p>
+                            {% endfor %}
+                        {% endfor %}
+
+                        {% if registration_form.non_field_errors %}
+                            <div style="color:red;">
+                            <p>{{registration_form.non_field_errors}}</p>
+                            </div>
+                        {% endif %}
+
+                        <p style="color: red;" id="errors"></p>
+
+                        <div class="d-flex justify-content-center">
+                            <button type="submit" id="submit" class="btn btn-lg btn-outline-light">Register</button>
+                        </div>
+
+                        <p class="text-center mt-5 mb-0 text-white">Already have an account? <a href="{% url 'login' %}" class="fw-bold text-white"><u>Login here</u></a></p>
+
+                    </form>
+
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section><!-- Register Section -->
+
+<script>
+  function validate(form) {
+    // alert("Validating...");
+    var usernameLength = document.getElementById('username').value.length;
+    var passwordLength = document.getElementById('password1').value.length;
+
+    // console.log("Username Length: ", usernameLength);
+    // console.log("Password Length: ", passwordLength);
+
+    if (usernameLength < 4 || usernameLength >= 20){
+      console.log("Username must be at least 4 characters and less than 20 characters");
+      document.getElementById('errors').innerHTML = "";
+      document.getElementById('errors').innerHTML = "Username must be at least 4 characters and less than 20 characters";
+      return false;
+    }
+
+    // if (!containsDomain(document.getElementById('email').value)){
+    //   console.log("Email does not contain domain");
+    //   document.getElementById('errors').innerHTML = "";
+    //   document.getElementById('errors').innerHTML = "Email does not contain domain";
+    //   return false;
+    // }
+
+    if (passwordLength < 8 || passwordLength >= 16){
+      console.log("Password must be at least 8 characters and less than 16 characters")
+      document.getElementById('errors').innerHTML = "";
+      document.getElementById('errors').innerHTML = "Password must be at least 8 characters and less than 16 characters";
+      return false;
+    }
+
+    if (!containsSpecialCharacter(document.getElementById('password1').value)){
+      console.log("Password does not contain special character or alphanumeric values");
+      document.getElementById('errors').innerHTML = "";
+      document.getElementById('errors').innerHTML = "Password does not contain special character or alphanumeric values";
+      return false;
+    }
+
+    if (document.getElementById('password1').value != document.getElementById('password2').value){
+      console.log("Password does not match");
+      document.getElementById('errors').innerHTML = "";
+      document.getElementById('errors').innerHTML = "Password does not match";
+      return false;
+    }
+    return true;
+  }
+
+  function containsSpecialCharacter(str){
+    console.log(/[ A-Za-z0-9]/g.test(str))
+    console.log(/[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/g.test(str))
+    return /[ A-Za-z0-9]/g.test(str) && /[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/g.test(str);
+  }
+
+  function containsDomain(str){
+    return /[@]/g.test(str);
+  }
+</script>
+{% endblock %}

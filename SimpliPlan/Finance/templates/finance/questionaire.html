@@ -1,0 +1,476 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Enter Information</title>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+  <head>
+    <!--CSS for Form-->
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #f1f1f1;
+    }
+
+    #regForm {
+      background-color: #ffffff;
+      margin: 100px auto;
+      font-family: Raleway;
+      padding: 40px;
+      width: 70%;
+      min-width: 300px;
+    }
+
+    h1 {
+      text-align: center;  
+    }
+
+    input {
+      padding: 10px;
+      width: 100%;
+      font-size: 17px;
+      font-family: Raleway;
+      border: 1px solid #aaaaaa;
+    }
+
+    /* Mark input boxes that gets an error on validation: */
+    input.invalid {
+      background-color: #ffdddd;
+    }
+
+    /* Hide all steps by default: */
+    .tab {
+      display: none;
+    }
+
+    button {
+      background-color: #04AA6D;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 17px;
+      font-family: Raleway;
+      cursor: pointer;
+    }
+
+    button:hover {
+      opacity: 0.8;
+    }
+
+    #prevBtn {
+      background-color: #bbbbbb;
+    }
+
+    /* Make circles that indicate the steps of the form: */
+    .step {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbbbbb;
+      border: none;  
+      border-radius: 50%;
+      display: inline-block;
+      opacity: 0.5;
+    }
+
+    .step.active {
+      opacity: 1;
+    }
+
+    /* Mark the steps that are finished and valid: */
+    .step.finish {
+      background-color: #04AA6D;
+    }
+    </style>
+
+    <!-- Add Row for all tables-->
+    <script>
+        // Find a <table> element with id="myTable":
+        function addIncome() {
+            var table = document.getElementById("incomeTable");
+
+            // Create an empty <tr> element and add it to the 1st position of the table:
+            var row = table.insertRow(-1);
+
+            // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+
+            // Add some text to the new cells:
+
+            cell1.innerHTML = '<td><input type="text" class="form-control" name="oIncome[]" placeholder="Source Name"></td>';
+            cell2.innerHTML = '<td><input type="number" step = 0.01 class="form-control" name="oAmount[]" placeholder="Amount ($)"></td>';
+        }
+        function addExpense() {
+            var table = document.getElementById("expenseTable");
+
+            // Create an empty <tr> element and add it to the 1st position of the table:
+            var row = table.insertRow(-1);
+            
+            // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+
+            // Add some text to the new cells:
+
+            cell1.innerHTML = '<td><input type="text" class="form-control" name="expense[]" placeholder="Expense Name"></td>';
+            cell2.innerHTML = '<td><input type="number" step = 0.01 class="form-control" name="eAmount[]" placeholder="Amount ($)"></td>';
+            
+        }
+
+        // Find a <table> element with id="myTable":
+        function addAsset() {
+            var table = document.getElementById("assetTable");
+
+            // Create an empty <tr> element and add it to the 1st position of the table:
+            var row = table.insertRow(-1);
+
+            // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+
+            // Add some text to the new cells:
+            cell1.innerHTML = '<td><input type="text" class="form-control" name="asset[]" placeholder="New Asset Name"></td>';
+            cell2.innerHTML = '<td><input type="number" step = 0.01 class="form-control" name="aValue[]" placeholder="Asset Amount ($)"></td>';
+            cell3.innerHTML = '<td><input type="number" step = 0.01 class="form-control" name="aReturn[]" placeholder="e.g, 1% = 0.01"></td>';
+        }
+
+        function addDebt() {
+            var table = document.getElementById("debtTable");
+
+            // Create an empty <tr> element and add it to the 1st position of the table:
+            var row = table.insertRow(-1);
+            
+            // Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+            var cell1 = row.insertCell(0);
+            var cell2 = row.insertCell(1);
+            var cell3 = row.insertCell(2);
+            var cell4 = row.insertCell(3);
+
+            // Add some text to the new cells:  
+            cell1.innerHTML = '<td><input type="text" class="form-control" name="debt[]" placeholder="Debt Name"></td>';
+            cell2.innerHTML = '<td><input type="number" step = 0.01 class="form-control" name="totalDebt[]" placeholder="Total Amount ($)"></td>';
+            cell3.innerHTML = '<td><input type="number" step = 0.01 class="form-control" name="paidDebt[]" placeholder="Amount Paid ($)"></td>';
+            cell4.innerHTML = '<td><input type="number" step = 0.01 class="form-control" name="debtInterest[]" placeholder="e.g, 1% = 0.01"></td>';
+        }
+    </script>
+    <!--Delete Row for all tables-->>
+    <script>
+      function deleteIncome() {
+        document.getElementById("incomeTable").deleteRow(-1);
+      }
+      function deleteExpense() {
+        document.getElementById("expenseTable").deleteRow(-1);
+      }
+      function deleteAsset() {
+        document.getElementById("assetTable").deleteRow(-1);
+      }
+      function deleteDebt() {
+        document.getElementById("debtTable").deleteRow(-1);
+      }
+    </script>
+    
+  </head>
+
+  <body>
+    <form id="regForm" method = "POST" action='/finance/questionaire/'>
+        {% csrf_token %}
+      <!-- One "tab" for each step in the form: -->
+      <!--first sub page-->
+      <div class="tab">
+        <h1>Tell us about you!</h1>
+        Date of Birth:
+          <p><input type = "date" id = "DoB" name="DoB"></p>
+
+        Gender:
+        <p>
+          <select id="gender" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="NA">I prefer not to Say</option>
+          </select>
+        </p>
+
+        Education Level:
+        <p>
+          <select id="eLevel" name="eLevel">
+            <option value="Primary">Primary</option>
+            <option value="GCE 'N' Levels">GCE 'N' Levels</option>
+            <option value="GCE 'O' Levels">GCE 'O' Levels</option>
+            <option value="GCE 'A' Levels">GCE 'A' Levels</option>
+            <option value="Diploma">Diploma</option>
+            <option value="Bachelor">Bachelor</option>
+            <option value="Master">Master</option>
+            <option value="Doctoral (PhD)">Doctoral (PhD)</option>
+          </select>
+        </p>
+
+        Marital Status:
+        <p>
+          <select id="mStatus" name="mStatus">
+            <option value="Single">Single</option>
+            <option value="Married">Married</option>
+            <option value="Divorced">Divorced</option>
+            <option value="Widowed">Widowed</option>
+          </select>
+        </p>
+        Occupuation:
+        <p><input placeholder="Occupation title" oninput="this.className = ''" name="Occupation"></p>
+
+        Monthly Income:
+        <p><input type = "number" step = 0.01 placeholder="Please insert value in $SGD" oninput="this.className = ''" name="mIncome"></p>
+
+        Please let us know if you have any other income sources
+        <!--Income Table-->
+        <div class="table-responsive">
+            <table id = "incomeTable" class="table table-striped" style="background-color:rgb(207, 207, 207);">
+                <thead>
+                    <tr>
+                        <th class="text-center">
+                            Income Source
+                        </th>
+                        <th class="text-center">
+                            Total Amount ($)
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" name="oIncome[]" placeholder="Source Name"></td>
+                        <td><input type="number" step = 0.01 class="form-control" name="oAmount[]" placeholder="Amount ($)"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-lg btn-danger col-md-3" onclick="addIncome()">Add New Income</button>
+            <button type="button" class="btn btn-lg btn-danger col-md-3" onclick="deleteIncome()">Delete Last Row</button>
+        </div>
+        <!--Income Table End-->
+      </div>
+
+      <!--second sub page-->
+      <div class="tab">
+        <h1>How about your family?</h1>
+        Spouse Income:
+        <p><input  type = "number" step = 0.01 placeholder = "Please insert value in $SGD" oninput="this.className = ''" name="sIncome"></p>
+        
+        Number of Dependents:
+        <p><input type = "number" step = 1 placeholder = "Please enter how many dependents you have" oninput="this.className = ''" name="noOfDependent"></p>
+      </div>
+
+      <!--third sub page-->
+      <div class="tab">
+        <h1>What about your Monthly Expenses?</h1>
+        <!--Expense Table-->
+        <div class="table-responsive">
+            <table id = "expenseTable" class="table table-striped" style="background-color:rgb(207, 207, 207);">
+                <thead>
+                    <tr>
+                        <tr>
+                            <th class="text-center">
+                                Expense Name
+                            </th>
+                            <th class="text-center">
+                                Total Amount ($)
+                            </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" name="expense[]" placeholder="Expense Name"></td>
+                        <td><input type="number" step = 0.01 class="form-control" name="eAmount[]" placeholder="Amount ($)"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-lg btn-danger col-md-3" onclick="addExpense()">Add New Expenses</button>
+            <button type="button" class="btn btn-lg btn-danger col-md-3" onclick="deleteExpense()">Delete Last Row</button>
+            
+        </div> 
+      </div>
+      <!--Expense Table End-->
+
+      <!--fourth sub page-->
+      <div class="tab">
+        <h1>What assets do you currently have?</h1>
+        <!--Asset Table-->
+        <div class="table-responsive">
+            <table id = "assetTable" class="table table-striped" style="background-color:rgb(207, 207, 207);">
+                <thead>
+                    <tr>
+                        <th class="text-center">
+                            Asset Name
+                        </th>
+                        <th class="text-center">
+                            Total Amount ($)
+                        </th>
+                        <th class="text-center">
+                            Returns
+                        </th>
+                    </tr>
+                </thead>
+                    <tr id = "{{asset.id}}">
+                        <td><input type="text" class="form-control" name="asset[]" placeholder="New Asset Name"></td>
+                        <td><input type="number" step = 0.01 class="form-control" name="aValue[]" placeholder="Asset Amount ($)"></td>
+                        <td><input type="number" step = 0.01 class="form-control" name="aReturn[]" placeholder="e.g, 1% = 0.01"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-lg btn-danger col-md-3" onclick="addAsset()">Add New Asset</button>
+            <button type="button" class="btn btn-lg btn-danger col-md-3" onclick="deleteAsset()">Delete Last Row</button>
+        </div>
+        <!--Asset Table End-->
+      </div>
+
+      <!--fifth sub page-->
+      <div class="tab">
+        <h1>How much do you have in your CPF account</h1>
+
+        Ordinary Account:
+        <p><input type = 'number' step = 0.01 placeholder="Amount in $SGD" oninput="this.className = ''" name="OAcpf"></p>
+        Special Account:
+        <p><input type = 'number' step = 0.01 placeholder="Amount in $SGD" oninput="this.className = ''" name="SAcpf"></p>
+        Medisave Account:
+        <p><input type = 'number' step = 0.01 placeholder="Amount in $SGD" oninput="this.className = ''" name="MAcpf"></p>
+      </div>
+
+      <!--sixth sub page-->
+      <div class="tab">
+        <h1>What debts do you currently have?</h1>
+        <!--Expense Table-->
+        <div class="table-responsive">
+            <table id = "debtTable" class="table table-striped" style="background-color:rgb(207, 207, 207);">
+                <thead>
+                    <tr>
+                        <th class="text-center">
+                            Liability Name
+                        </th>
+                        <th class="text-center">
+                            Total Amount ($)
+                        </th>
+                        <th class="text-center">
+                            Total Repayment ($)
+                        </th>
+                        <th class="text-center">
+                            Annual Interest
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" class="form-control" name="debt[]" placeholder="Debt Name"></td>
+                        <td><input type="number" step = 0.01 class="form-control" name="totalDebt[]" placeholder="Total Amount ($)"></td>
+                        <td><input type="number" step = 0.01 class="form-control" name="paidDebt[]" placeholder="Amount Paid ($)"></td>
+                        <td><input type="number" step = 0.01 class="form-control" name="debtInterest[]" placeholder="e.g, 1% = 0.01"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-lg btn-danger col-md-3" onclick="addDebt()">Add New Liabilities</button>
+            <button type="button" class="btn btn-lg btn-danger col-md-3" onclick="deleteDebt()">Delete Last Row</button>
+        </div>
+        <!--Expense Table End-->
+      </div>
+
+      <div style="overflow:auto;">
+        <div style="float:right;">
+          <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+          <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+        </div>
+      </div>
+
+      <!-- Circles which indicates the steps of the form: -->
+      <div style="text-align:center;margin-top:40px;">
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+        <span class="step"></span>
+      </div>
+    </form>
+
+    <!--Script for form-->
+    <script>
+    var currentTab = 0; // Current tab is set to be the first tab (0)
+    showTab(currentTab); // Display the current tab
+    
+    function showTab(n) {
+      // This function will display the specified tab of the form...
+      var x = document.getElementsByClassName("tab");
+      x[n].style.display = "block";
+      //... and fix the Previous/Next buttons:
+      if (n == 0) {
+        document.getElementById("prevBtn").style.display = "none";
+      } else {
+        document.getElementById("prevBtn").style.display = "inline";
+      }
+      if (n == (x.length - 1)) {
+        document.getElementById("nextBtn").innerHTML = "Submit";
+      } else {
+        document.getElementById("nextBtn").innerHTML = "Next";
+      }
+      //... and run a function that will display the correct step indicator:
+      fixStepIndicator(n)
+    }
+    
+    function nextPrev(n) {
+      // This function will figure out which tab to display
+      var x = document.getElementsByClassName("tab");
+      // Exit the function if any field in the current tab is invalid:
+      if (n == 1 && !validateForm()) return false;
+      // Hide the current tab:
+      x[currentTab].style.display = "none";
+      // Increase or decrease the current tab by 1:
+      currentTab = currentTab + n;
+      // if you have reached the end of the form...
+      if (currentTab >= x.length) {
+        // ... the form gets submitted:
+        document.getElementById("regForm").submit();
+        return false;
+      }
+      // Otherwise, display the correct tab:
+      showTab(currentTab);
+    }
+    
+    function validateForm() {
+      // This function deals with validation of the form fields
+      var x, y, i, valid = true;
+      x = document.getElementsByClassName("tab");
+      y = x[currentTab].getElementsByTagName("input");
+      // A loop that checks every input field in the current tab:
+      for (i = 0; i < y.length; i++) {
+        // If a field is empty...
+        if (y[i].value == "") {
+          // add an "invalid" class to the field:
+          y[i].className += " invalid";
+          // and set the current valid status to false
+          valid = false;
+        }
+      }
+      // If the valid status is true, mark the step as finished and valid:
+      if (valid) {
+        document.getElementsByClassName("step")[currentTab].className += " finish";
+      }
+      return valid; // return the valid status
+    }
+    
+    function fixStepIndicator(n) {
+      // This function removes the "active" class of all steps...
+      var i, x = document.getElementsByClassName("step");
+      for (i = 0; i < x.length; i++) {
+        x[i].className = x[i].className.replace(" active", "");
+      }
+      //... and adds the "active" class on the current step:
+      x[n].className += " active";
+    }
+    </script>
+  </body>
+</html>
+{% endblock %}
